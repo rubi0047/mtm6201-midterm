@@ -14,33 +14,8 @@
     background-color: #F8F8F8;
 }
 
-.hero h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.hero h1 strong {
-    color: #FF9501;
-    font-weight: bold;
-}
-
-.hero h2 {
-    padding: 19px;
-    font-size: 30px;
-    font-weight: normal;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #555;
-    padding-right: 50px;
-    padding-left: 50px;
-    margin-top: -15px;
-    margin-bottom: 40px;
-}
-
 /* Unlock Potential */
-   .unlockPotential {
+.unlockPotential {
     display: flex;
     align-items: center;
     gap: 25px;
@@ -82,16 +57,17 @@
 
 /* First Line */
 .lines::before {
-    top: -18px;
+    top: -20px;
     left: -35px;
-    width: 30px;
-    transform: rotate(40deg);
+    width: 35px;
+    transform: rotate(45deg);
 }
 
 /* Second Line */
 .lines::after {
-    bottom: 45px;
-    left: -38px;
+    bottom: 50px;
+    left: -30px;
+    width: 20px;
     transform: rotate(15deg);
 }
 
@@ -99,7 +75,7 @@
 .extra-line {
     position: absolute;
     top: -25px;
-    right: 35px;
+    right: 40px;
     width: 20px;
     height: 4px;
     background: black;
@@ -108,23 +84,54 @@
     z-index: 2; /* Keeps this line above the icon */
 }
 
+.hero h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero h1 strong {
+    color: #FF9501;
+    font-weight: bold;
+}
+
+.hero h2 {
+    padding: 19px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: -15px;
+    margin-bottom: 55px;
+}
+
 /* Hero Buttons */
 .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .hero-buttons .explore-btn {
     background-color: #FF9501;
+    font-size: 20px;
     color: white;
     border: none;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .hero-buttons .pricing-btn {
     background-color: white;
+    font-size: 20px;
     color: #333;
     border: 2px solid #EAEAEA;
+    padding: 18px;
+    border-radius: 8px;
 }
 
 /*  Partner Logos  */
