@@ -14,10 +14,13 @@ body {
     color: #333;
     background-color: #fff;
     line-height: 1.6;
-    text-align: center;
 }
 
 /*  Promo Banner  */
+.promo-container {
+    padding: 15px;
+}
+
 .promo-banner {
     background-color: #FF9501;
     color: white;
@@ -25,6 +28,7 @@ body {
     padding: 10px 15px;
     font-size: 14px;
     font-weight: bold;
+    border-radius: 10px;
 }
 
 .promo-banner a {
@@ -85,7 +89,7 @@ nav img {
 /* Skip Link (Hidden by Default, Visible on Focus) */
 .skip-link {
     position: absolute;
-    top: -40px;
+    top: -50px;
     left: 10px;
     background: #FF9501;
     color: white;
