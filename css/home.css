@@ -1,177 +1,79 @@
 /* Homepage Styles */
 
-/* Center Content Within Sections */
+/* Center Content */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Hero Section */
+/* Hero Section  */
 .hero {
-    background-color: #FFF3E0;
+    background-color: white;
+    text-align: center;
     padding: 40px 20px;
 }
 
 .hero h1 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.hero h1 strong {
     color: #FF9501;
-    font-size: 24px;
+    font-weight: bold;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
 }
 
+/* Hero Buttons */
 .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Partner Logos */
-.partners ul {
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+.hero-buttons .explore-btn {
+    background-color: #FF9501;
+    color: white;
+    border: none;
+}
+
+.hero-buttons .pricing-btn {
+    background-color: white;
+    color: #333;
+    border: 2px solid #EAEAEA;
+}
+
+/*  Partner Logos  */
+.partners {
+    background-color: white;
+    padding: 20px;
+}
+
+.partners ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     list-style: none;
-    padding: 10px;
+    padding: 0;
+}
+
+/* Hide extra logos in mobile view */
+.partners li {
+    display: none; /* Hide all logos by default */
+}
+
+.partners li:nth-child(1),
+.partners li:nth-child(2),
+.partners li:nth-child(3) {
+    display: block; /* Show only the first 3 logos on mobile */
 }
 
 .partners img {
-    width: 60px;
-    height: auto;
-}
-
-/* Benefits Section */
-.benefits {
-    background: #f8f8f8;
-    padding: 30px;
-}
-
-.benefit-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.benefit-item {
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Courses Section */
-.course-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.courses article {
-    background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.courses img {
-    border-radius: 5px;
-}
-
-/* Testimonials */
-.testimonial-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.testimonial-item blockquote {
-    font-style: italic;
-    background: #f9f9f9;
-    padding: 15px;
-    border-left: 5px solid #FF9501;
-    margin: 15px 0;
-}
-
-/* Pricing Plans */
-.pricing-plans {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.plan {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* FAQ */
-.faq details {
-    background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Media Queries */
-
-/* Tablet View */
-@media screen and (min-width: 768px) {
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero-buttons {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .benefit-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .pricing-plans {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .plan {
-        width: 45%;
-    }
-}
-
-/* Desktop View */
-@media screen and (min-width: 1024px) {
-    .hero {
-        padding: 60px 40px;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .partners img {
-        width: 80px;
-    }
-
-    .benefit-list {
-        gap: 20px;
-    }
-
-    .testimonials {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .pricing-plans {
-        gap: 30px;
-    }
+    height: 25px;
 }
