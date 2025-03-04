@@ -1,0 +1,106 @@
+/* Global Styles Sheet */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header & Nav */
+header {
+    background-color: #FF9501;
+    padding: 15px;
+    text-align: left;
+}
+
+.nav-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    background-color: #FF9501;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e68400;
+}
+
+/* Section Spacing */
+section {
+    padding: 20px;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Skip Links */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #FF9501;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
