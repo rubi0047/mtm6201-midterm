@@ -65,7 +65,7 @@
     content: "";
     position: absolute;
     width: 25px; 
-    height: 6px;
+    height: 4px;
     background: black;
     border-radius: 20px;
     z-index: 2; /* Ensures the lines are above the icon */
@@ -73,28 +73,29 @@
 
 /* First Line */
 .lines::before {
-    top: -20px;
-    left: -15px;
-    transform: rotate(-30deg);
+    top: -18px;
+    left: -35px;
+    width: 30px;
+    transform: rotate(40deg);
 }
 
 /* Second Line */
 .lines::after {
-    bottom: -20px;
-    left: -10px;
-    transform: rotate(30deg);
+    bottom: 45px;
+    left: -38px;
+    transform: rotate(15deg);
 }
 
 /* Third Line (Extra Span) */
 .extra-line {
     position: absolute;
     top: -25px;
-    right: 0px;
+    right: 35px;
     width: 20px;
-    height: 6px;
+    height: 4px;
     background: black;
     border-radius: 20px;
-    transform: rotate(-10deg);
+    transform: rotate(95deg);
     z-index: 2; /* Keeps this line above the icon */
 }
 
