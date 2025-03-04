@@ -9,13 +9,13 @@
 
 /* Hero Section  */
 .hero {
-    background-color: white;
     text-align: center;
     padding: 40px 20px;
+    background-color: #F8F8F8;
 }
 
 .hero h1 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: normal;
 }
 
@@ -28,6 +28,74 @@
     font-size: 16px;
     color: #555;
     margin-bottom: 20px;
+}
+
+/* Unlock Potential */
+   .unlockPotential {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    background-color: white;
+    padding: 15px 10px 10px 10px;
+    border-radius: 10px;
+    position: relative; /* Needed for absolute positioning of lines */
+}
+
+/* Icon Container */
+.unlockPotential .lines {
+    position: relative; /* Needed for pseudo-elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Moves the container below the lines */
+}
+
+/* Hero Icon */
+.unlockPotential img {
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1; /* Moves the icon behind the lines */
+}
+
+/* Pseudo-Elements - Lines */
+.lines::before, .lines::after {
+    content: "";
+    position: absolute;
+    width: 25px; 
+    height: 6px;
+    background: black;
+    border-radius: 20px;
+    z-index: 2; /* Ensures the lines are above the icon */
+}
+
+/* First Line */
+.lines::before {
+    top: -20px;
+    left: -15px;
+    transform: rotate(-30deg);
+}
+
+/* Second Line */
+.lines::after {
+    bottom: -20px;
+    left: -10px;
+    transform: rotate(30deg);
+}
+
+/* Third Line (Extra Span) */
+.extra-line {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    width: 20px;
+    height: 6px;
+    background: black;
+    border-radius: 20px;
+    transform: rotate(-10deg);
+    z-index: 2; /* Keeps this line above the icon */
 }
 
 /* Hero Buttons */
