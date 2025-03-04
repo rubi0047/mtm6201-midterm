@@ -1,0 +1,120 @@
+/* Homepage Styles */
+
+/* Center Content Within Sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #FFF3E0;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    color: #FF9501;
+    font-size: 24px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Partner Logos */
+.partners ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 10px;
+}
+
+.partners img {
+    width: 60px;
+    height: auto;
+}
+
+/* Benefits Section */
+.benefits {
+    background: #f8f8f8;
+    padding: 30px;
+}
+
+.benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.benefit-item {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Courses Section */
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.courses article {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.courses img {
+    border-radius: 5px;
+}
+
+/* Testimonials */
+.testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.testimonial-item blockquote {
+    font-style: italic;
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #FF9501;
+    margin: 15px 0;
+}
+
+/* Pricing Plans */
+.pricing-plans {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.plan {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ */
+.faq details {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
