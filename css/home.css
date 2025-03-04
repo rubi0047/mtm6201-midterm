@@ -118,3 +118,60 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Media Queries */
+
+/* Tablet View */
+@media screen and (min-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .benefit-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pricing-plans {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .plan {
+        width: 45%;
+    }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1024px) {
+    .hero {
+        padding: 60px 40px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .partners img {
+        width: 80px;
+    }
+
+    .benefit-list {
+        gap: 20px;
+    }
+
+    .testimonials {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pricing-plans {
+        gap: 30px;
+    }
+}
