@@ -77,3 +77,104 @@
 .partners img {
     height: 25px;
 }
+
+/* Benefits Section */
+   .benefits {
+    background-color: #F8F8F8;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.benefits h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.benefits p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* View All Button */
+.view-all-btn {
+    background-color: white;
+    color: #333;
+    border: 1px solid #E0E0E0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: #EAEAEA;
+}
+
+/* Benefit Cards */
+.benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.benefit-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    position: relative;
+}
+
+/* Style for All Benefit Item Numbers */
+.benefit-item h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* Style for All Benefit Item Titles */
+.benefit-item p:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+/* Style for All Benefit Item Descriptions */
+.benefit-item p:last-of-type {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Style for All Arrow Buttons */
+.benefit-item .arrow-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: white;
+    border: 1px solid #E0E0E0;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.benefit-item .arrow-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.benefit-item .arrow-btn:hover {
+    background: #FF9501;
+}
