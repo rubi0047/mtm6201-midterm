@@ -42,12 +42,13 @@ body {
 }
 
 /* Header (Navigation Bar) */
-header {
+   header {
     background-color: white;
     padding: 15px 20px;
     border-bottom: 1px solid #EAEAEA;
 }
 
+/* Use Flexbox to Align Items */
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -56,22 +57,35 @@ header {
     margin: 0 auto;
 }
 
-nav img {
-    height: 40px;
+/* Ensure Navigation Uses Flexbox */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
+/* Logo Positioned on the Left */
+nav img {
+    height: 40px;
+    border-radius: 8px;
+}
+
+/* Align All Links & Buttons to the Right */
 .nav-links {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
+/* Style for Navigation Links */
 .nav-links a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
+/* Style for Login Button */
 .nav-links .login-btn {
     background-color: #FF9501;
     color: white;
@@ -79,6 +93,7 @@ nav img {
     border-radius: 5px;
 }
 
+/* Style for Menu Button */
 .menu-btn {
     background: none;
     border: none;
