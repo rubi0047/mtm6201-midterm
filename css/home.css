@@ -136,9 +136,7 @@
     display: none; /* Hide all logos by default */
 }
 
-.partners li:nth-child(1),
-.partners li:nth-child(2),
-.partners li:nth-child(3) {
+.partners li:nth-child(1), .partners li:nth-child(2), .partners li:nth-child(3) {
     display: block; /* Show only the first 3 logos on mobile */
 }
 
