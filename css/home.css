@@ -280,7 +280,7 @@
 .benefit-item h3 {
     font-size: 55px;
     font-weight: bold;
-    color: #000;
+    color: #262626;
     position: absolute;
     top: 45px;
     right: 40px;
@@ -290,7 +290,7 @@
 .benefit-crd-txt {
     display: flex;
     padding-top: 75px;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
     flex-direction: column;
     gap: 5px;
     text-align: left; /* Ensures text is aligned left */
@@ -300,7 +300,8 @@
 .benefit-crd-txt p:first-of-type {
     font-size: 25px;
     font-weight: 600;
-    color: #000;
+    color: #333333;
+    line-height: 26px;
     margin: 0;
     margin-bottom: 15px;
 }
