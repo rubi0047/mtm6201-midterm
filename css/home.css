@@ -259,58 +259,80 @@
     margin-top: 20px;
 }
 
-.benefit-item {
-    background: #FFFFFF;
-    padding: 150px;
-    border-radius: 10px;
+/* ===============================
+   🔹 Benefit Card Styling (Mobile First)
+   =============================== */
+   .benefit-item {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    text-align: left;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns content to the left */
+    width: 100%; /* Ensures the card fills its container */
+   
 }
 
-/* Style for All Benefit Item Numbers */
+/* Number in Top-Right Corner */
 .benefit-item h3 {
-    font-size: 32px;
+    font-size: 55px;
     font-weight: bold;
-    color: #262626;
+    color: #000;
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 45px;
+    right: 40px;
 }
 
-/* Style for All Benefit Item Titles */
-.benefit-item p:first-of-type {
+/* Benefit Text Container */
+.benefit-crd-txt {
+    display: flex;
+    padding-top: 75px;
+    padding-bottom: 70px;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left; /* Ensures text is aligned left */
+}
+
+/* Title */
+.benefit-crd-txt p:first-of-type {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.benefit-crd-txt p:last-of-type {
     font-size: 18px;
-    font-weight: bold;
-    color: #262626;
-    margin-bottom: 5px;
+    font-weight: 400;
+    color: #4C4C4D;
+    line-height: 1.5;
+    margin: 0;
 }
 
-/* Style for All Benefit Item Descriptions */
-.benefit-item p:last-of-type {
-    font-size: 14px;
-    color: #262626;
-    margin-bottom: 10px;
+/* Arrow Button (Bottom-Right Corner) */
+.arrow-all {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-/* Style for All Arrow Buttons */
-.benefit-item .arrow-btn {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    background: #FFFFFF;
+.arrow-btn {
+    background: #F8F8F8;
+    color: #FF9500;
+    font-size: 35px;
     border: 1px solid #F1F1F3;
-    padding: 8px;
-    border-radius: 5px;
+    padding-top: 10px;
+    padding: 11px 18px 11px 18px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
-.benefit-item .arrow-btn img {
-    width: 16px;
-    height: 16px;
-}
-
-.benefit-item .arrow-btn:hover {
-    background: #FF9500;
+.arrow-btn:hover {
+    background-color: #F1F1F3;
 }
