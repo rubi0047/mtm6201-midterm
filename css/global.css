@@ -97,6 +97,7 @@ nav img {
 .nav-links {
     display: flex;
     align-items: center;
+    color: #262626;
     gap: 20px;
 }
 

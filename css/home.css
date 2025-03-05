@@ -101,7 +101,7 @@
 }
 
 .hero h2 {
-    padding: 19px;
+    padding: 14px;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
@@ -109,10 +109,9 @@
 
 .hero p {
     font-size: 18px;
-    color: #555;
+    color: #262626;
     padding-right: 50px;
     padding-left: 50px;
-    margin-top: -15px;
     margin-bottom: 55px;
 }
 
@@ -124,31 +123,31 @@
 }
 
 .hero-buttons .explore-btn {
-    background-color: #FF9501;
-    font-size: 20px;
-    color: white;
+    background-color: #FF9500;
+    font-size: 18px;
+    color: #FFFFFF;
     border: none;
-    padding: 20px;
+    padding: 14px 20px 14px 20px;
     border-radius: 8px;
 }
 
 .hero-buttons .pricing-btn {
-    background-color: white;
+    background-color: #FFFFFF;
     font-size: 20px;
-    color: #333;
-    border: 2px solid #EAEAEA;
+    color: #262626;
+    border: 1px solid #F1F1F3;
     padding: 18px;
     border-radius: 8px;
 }
 
 /*  Partner Logos  */
 .partners {
-    background-color: white;
+    background-color: #FFFFFF;
     margin-left: 30px;
     margin-right: 30px;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #F1F1F3;
 }
 
 .partners ul {
@@ -167,13 +166,12 @@
 }
 
 .partners img {
-    height: 35px;
-    border-right: 1px solid #ccc;
+    height: 30px;
 }
 
 /* Benefits Section */
    .benefits {
-    background-color: #F8F8F8;
+    background-color: #F7F7F8;
     text-align: center;
     padding: 40px 20px;
 }
@@ -181,21 +179,21 @@
 .benefits h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #000;
+    color: #262626;
     margin-bottom: 10px;
 }
 
 .benefits p {
     font-size: 16px;
-    color: #666;
+    color: #262626;
     margin-bottom: 20px;
 }
 
 /* View All Button */
 .view-all-btn {
-    background-color: white;
-    color: #333;
-    border: 1px solid #E0E0E0;
+    background-color: #FFFFFF;
+    color: #262626;
+    border: 1px solid #F1F1F3;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -205,7 +203,7 @@
 }
 
 .view-all-btn:hover {
-    background-color: #EAEAEA;
+    background-color: #F1F1F3;
 }
 
 /* Benefit Cards */
@@ -217,7 +215,7 @@
 }
 
 .benefit-item {
-    background: white;
+    background: #FFFFFF;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -229,7 +227,7 @@
 .benefit-item h3 {
     font-size: 32px;
     font-weight: bold;
-    color: #000;
+    color: #262626;
     position: absolute;
     top: 15px;
     right: 20px;
@@ -239,14 +237,14 @@
 .benefit-item p:first-of-type {
     font-size: 18px;
     font-weight: bold;
-    color: #000;
+    color: #262626;
     margin-bottom: 5px;
 }
 
 /* Style for All Benefit Item Descriptions */
 .benefit-item p:last-of-type {
     font-size: 14px;
-    color: #666;
+    color: #262626;
     margin-bottom: 10px;
 }
 
@@ -255,8 +253,8 @@
     position: absolute;
     bottom: 15px;
     right: 15px;
-    background: white;
-    border: 1px solid #E0E0E0;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F3;
     padding: 8px;
     border-radius: 5px;
     cursor: pointer;
@@ -269,5 +267,5 @@
 }
 
 .benefit-item .arrow-btn:hover {
-    background: #FF9501;
+    background: #FF9500;
 }
