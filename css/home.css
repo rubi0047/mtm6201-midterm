@@ -150,23 +150,34 @@
     border: 1px solid #F1F1F3;
 }
 
+.partners img {
+    height: 30px;
+}
+
 .partners ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    padding: 0;
 }
 
-/* Hide extra logos in mobile view */
+/* Logo Wrapper - Grey Border Around Each Image */
+.logo-wrapper {
+    padding: 10px;
+    border-right: 1px solid #F1F1F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hide all logos in mobile view */
 .partners li {
-    display: none; /* Hide all logos by default */
+    display: none;
 }
 
-.partners li:nth-child(1), .partners li:nth-child(2), .partners li:nth-child(3) {
-    display: block; /* Show only the first 3 logos on mobile */
-}
-
-.partners img {
-    height: 30px;
+/* Show only the first 3 logos on mobile */
+.partners li:nth-child(-n+3) {
+    display: block;
 }
 
 /* Benefits Section */
