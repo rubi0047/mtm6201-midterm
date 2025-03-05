@@ -233,14 +233,14 @@
     transition: background 0.3s ease;
     border-radius: 8px;
     border: 1px solid #F1F1F3;
+    margin-bottom: 30px;
 }
 
 .view-all-btn:hover {
     background-color: #F1F1F3;
 }
 
-/* Benefit Cards */
-
+/* Benefit Section */
 .splitter-text {
     text-align: left; /* Aligns text to the right */
 }
@@ -260,9 +260,7 @@
     margin-top: 20px;
 }
 
-/* ===============================
-   🔹 Benefit Card Styling (Mobile First)
-   =============================== */
+/* Benefit Card Styling */
    .benefit-item {
     background: white;
     padding: 40px;
@@ -344,7 +342,6 @@
 }
 
 /* Our Courses */
-
 .courses {
     background-color: #F7F7F8;
     text-align: center;
@@ -364,10 +361,100 @@
     margin-bottom: 20px;
 }
 
+/* ===============================
+   🔹 Course Card Styling (Mobile First)
+   =============================== */
+   .fundamentals {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 0 0 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+/* Course Image */
+.peron-writing img {
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 12px;
+}
 
+/* Option Buttons */
+.option-btns {
+    display: flex;
+    justify-content: center; /* Aligns left */
+    gap: 10px;
+    width: 90%;
+    margin: 15px 0;
+}
 
+.option-btns button {
+    background-color: #FFFFFF;
+    font-size: 16px;
+    color: #262626;
+    border: 1px solid #E0E0E0;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
 
+.btn-1:hover {
+    background-color: #EAEAEA;
+}
 
+/* Course Details */
+.fundamental-crd {
+    width: 90%;
+    text-align: left;
+}
 
+/* Instructor Name */
+.fundamental-crd h3 {
+    font-size: 16px;
+    color: #262626;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
 
+/* Course Title */
+.fundamental-crd h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+/* Course Description */
+.fundamental-crd p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Get It Now Button */
+.getIt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.getit-btn {
+    width: 90%; /* Full width */
+    background-color: #F8F8F8;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.getit-btn:hover {
+    background-color: #EAEAEA;
+}
