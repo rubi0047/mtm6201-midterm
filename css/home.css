@@ -337,3 +337,7 @@
 .arrow-btn:hover {
     background-color: #F1F1F3;
 }
+
+.benefit-item:nth-child(5), .benefit-item:nth-child(6) {
+    display: none;
+}
