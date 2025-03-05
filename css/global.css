@@ -7,30 +7,56 @@
     box-sizing: border-box;
 }
 
+/* Custom Font */
+.be-vietnam-pro-regular {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .be-vietnam-pro-medium {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .be-vietnam-pro-semibold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .be-vietnam-pro-bold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 14px;
+    color: #262626;
+    line-height: 21px;
 }
 
 /*  Promo Banner  */
 .promo-container {
-    padding: 15px;
+    padding: 10px 16px 10px 16px;
 }
 
 .promo-banner {
-    background-color: #FF9501;
-    color: white;
-    text-align: center;
+    background-color: #FF9500;
+    color: #FFFFFF;
+    font-size: 18px;
     padding: 10px 15px;
-    font-size: 20px;
-    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 6px;
 }
 
 .promo-banner a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -41,7 +67,7 @@ body {
 /* Header (Navigation Bar) */
    header {
     padding: 15px 20px;
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid #F1F1F3;
 }
 
 /* Use Flexbox to Align Items */
@@ -77,14 +103,14 @@ nav img {
 /* Style for Navigation Links */
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #262626;
 }
 
 /* Style for Login Button */
 .nav-links .login-btn {
-    background-color: #FF9501;
-    color: white;
-    padding: 8px 15px;
+    background-color: #FF9500;
+    color: #FFFFFF;
+    padding: 12px 20px 12px 20px;
     border-radius: 5px;
 }
 
@@ -101,8 +127,8 @@ nav img {
     position: absolute;
     top: -50px;
     left: 10px;
-    background: #FF9501;
-    color: white;
+    background: #FF9500;
+    color: #FFFFFF;
     padding: 10px;
     font-weight: bold;
     text-decoration: none;

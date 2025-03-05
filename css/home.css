@@ -5,29 +5,30 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color:#F8F8F8;
+    background-color:#F7F7F8;
 }
 
 .main-content {
-    background-color: #F8F8F8;
+    background-color: #F7F7F8;
 }
 
 /* Hero Section  */
 .hero {
     text-align: center;
     padding: 40px 20px;
-    background-color: #F8F8F8;
+    background-color: #F7F7F8;
 }
 
 /* Unlock Potential */
 .unlockPotential {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     justify-content: center;
-    background-color: white;
-    padding: 15px 10px 10px 10px;
-    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
     position: relative; /* Needed for absolute positioning of lines */
 }
 
@@ -55,7 +56,7 @@
     position: absolute;
     width: 25px; 
     height: 4px;
-    background: black;
+    background: #262626;
     border-radius: 20px;
     z-index: 2; /* Ensures the lines are above the icon */
 }
@@ -83,26 +84,27 @@
     right: 40px;
     width: 20px;
     height: 4px;
-    background: black;
+    background: #262626;
     border-radius: 20px;
     transform: rotate(95deg);
     z-index: 2; /* Keeps this line above the icon */
 }
 
 .hero h1 {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
 }
 
 .hero h1 strong {
-    color: #FF9501;
-    font-weight: bold;
+    color: #FF9500;
 }
 
 .hero h2 {
     padding: 19px;
-    font-size: 30px;
-    font-weight: normal;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
 }
 
 .hero p {
