@@ -201,12 +201,12 @@
 .benefits {
     background-color: #F7F7F8;
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 25px;
 }
 
 .benefits h2 {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
     color: #262626;
     margin-bottom: 10px;
 }
@@ -240,15 +240,16 @@
 }
 
 /* Benefit Cards */
-.benefits-text {
+
+.splitter-text {
     text-align: left; /* Aligns text to the right */
 }
 
-.benefits-text h2 {
+.splitter-text h2 {
     margin-bottom: 20px;
 }
 
-.benefits-text p {
+.splitter-text p {
     line-height: 26px; /* Adjust to desired spacing */
 }
 
@@ -341,3 +342,32 @@
 .benefit-item:nth-child(5), .benefit-item:nth-child(6) {
     display: none;
 }
+
+/* Our Courses */
+
+.courses {
+    background-color: #F7F7F8;
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.courses h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+.courses p {
+    font-size: 16px;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
