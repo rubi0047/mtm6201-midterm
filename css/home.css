@@ -4,7 +4,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 5px;
     background-color:#F7F7F8;
 }
 
@@ -15,7 +15,7 @@
 /* Hero Section  */
 .hero {
     text-align: center;
-    padding: 40px 20px;
+    padding: 55px 30px 40px 30px;
     background-color: #F7F7F8;
 }
 
@@ -110,8 +110,8 @@
 .hero p {
     font-size: 18px;
     color: #262626;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-bottom: 55px;
 }
 

@@ -42,14 +42,14 @@ body {
 
 /*  Promo Banner  */
 .promo-container {
-    padding: 10px 16px 10px 16px;
+    padding: 50px 14px 10px 15px;
 }
 
 .promo-banner {
     background-color: #FF9500;
     color: #FFFFFF;
     font-size: 18px;
-    padding: 10px 15px;
+    padding: 15px 20px 15px 20px;
     display: flex;
     justify-content: space-around;
     border-radius: 6px;
