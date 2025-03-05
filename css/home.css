@@ -8,6 +8,10 @@
     background-color:#F8F8F8;
 }
 
+.main-content {
+    background-color: #F8F8F8;
+}
+
 /* Hero Section  */
 .hero {
     text-align: center;
@@ -141,13 +145,14 @@
     margin-left: 30px;
     margin-right: 30px;
     padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
 
 .partners ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    padding: 0;
 }
 
 /* Hide extra logos in mobile view */
@@ -160,7 +165,8 @@
 }
 
 .partners img {
-    height: 25px;
+    height: 35px;
+    border-right: 1px solid #ccc;
 }
 
 /* Benefits Section */
