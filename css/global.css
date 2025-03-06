@@ -153,6 +153,10 @@ nav img {
     border-radius: 6px;
 }
 
+.login-btn:hover {
+    background-color: #E07B00;
+}
+
 .signup-btn {
     font-size: 13px;
 }
