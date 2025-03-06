@@ -471,7 +471,7 @@
 }
 
 /* Testimonials Section */
-   .testimonials {
+.testimonials {
     background-color: #F7F7F8;
     text-align: left;
     padding: 40px 25px;
@@ -544,3 +544,69 @@
 }
 
 /* Pricing Section */
+.pricing {
+    background-color: #F7F7F8;
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.pricing h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+.pricing p {
+    font-size: 16px;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+/* Pricing Buttons */
+.pricing-toggle {
+    display: flex;
+    justify-content: center; /* Centers buttons */
+    background-color: #FFFFFF;
+    padding: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 8px;
+    gap: 5px; /* Small space between buttons */
+}
+
+/* Monthly Button */
+.mnth-btn {
+    background-color: #FF9500;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Yearly Button */
+.yr-btn {
+    background-color: transparent;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effects */
+.mnth-btn:hover {
+    background-color: #FFFFFF;
+    color: #FF9500;
+}
+
+.yr-btn:hover {
+    background-color: #FF9500;
+    color: #FFFFFF;
+}
