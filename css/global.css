@@ -119,6 +119,12 @@ nav img {
     transition: background 0.3s ease;
 }
 
+/* Active Page Styling */
+.nav-menu li a.active {
+    background-color: #E07B00; /* Darker orange */
+    font-weight: bold;
+}
+
 /* Hover Effect */
 .nav-menu li a:hover {
     background-color: #E07B00;
