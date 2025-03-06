@@ -41,6 +41,11 @@ body {
 }
 
 /*  Promo Banner  */
+.rpt-wrapper {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
 .promo-container {
     padding: 40px 14px 10px 15px;
 }
@@ -48,7 +53,7 @@ body {
 .promo-banner {
     background-color: #FF9500;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 16px;
     padding: 15px 20px 15px 20px;
     display: flex;
     justify-content: space-around;
@@ -89,20 +94,21 @@ nav {
 
 /* Logo Positioned on the Left */
 nav img {
-    height: 40px;
+    height: 42px;
     border-radius: 8px;
 }
 
 .nav-menu {
     list-style: none; /* Removes bullet points */
     display: flex; /* Aligns items horizontally */
-    gap: 15px; /* Adds space between menu items */
+    gap: 8px; /* Adds space between menu items */
     padding: 0;
     margin: 0;
 }
 
 /* Navigation Links */
 .nav-menu li a {
+    font-size: 13px;
     display: block; /* Ensures padding applies correctly */
     background-color: #FF9500; /* Orange background */
     color: #FFFFFF;
@@ -134,10 +140,15 @@ nav img {
 
 /* Style for Login Button */
 .nav-links .login-btn {
+    font-size: 13px;
     background-color: #FF9500;
     color: #FFFFFF;
     padding: 10px 20px 10px 20px;
     border-radius: 6px;
+}
+
+.signup-btn {
+    font-size: 13px;
 }
 
 /* Skip Link (Hidden by Default, Visible on Focus) */
