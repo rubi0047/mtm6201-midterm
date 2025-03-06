@@ -388,7 +388,7 @@
 }
 
 /* Course Image */
-.peron-writing img {
+.crd-img img {
     margin-top: 20px;
     width: 90%;
     border-radius: 12px;
@@ -422,20 +422,20 @@
     text-align: left;
 }
 
-/* Course Title */
-.fundamental-crd h2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 25px;
-}
-
 /* Instructor Name */
-.fundamental-crd h3 {
+.fundamental-crd h2 {
     font-size: 16px;
     color: #262626;
     font-weight: 500;
     margin-bottom: 30px;
+}
+
+/* Course Title */
+.fundamental-crd h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 25px;
 }
 
 /* Course Description */
