@@ -469,3 +469,75 @@
 .getit-btn:hover {
     background-color: #EAEAEA;
 }
+
+/* Testimonials Section */
+   .testimonials {
+    background-color: #F7F7F8;
+    text-align: left;
+    padding: 40px 25px;
+}
+
+/* Testimonial Card */
+.testimonial-crd {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Testimonial Text */
+.testimonial-crd p {
+    font-size: 16px;
+    color: #262626;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Footer Section (Aligns Profile & Button) */
+.testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #EAEAEA;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Profile Image */
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+/* Name */
+.profile h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #262626;
+    margin: 0;
+}
+
+/* Read Full Story Button */
+.readFull-btn {
+    background-color: #F8F8F8;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.readFull-btn:hover {
+    background-color: #EAEAEA;
+}
