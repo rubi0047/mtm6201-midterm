@@ -140,6 +140,16 @@
     border-radius: 8px;
 }
 
+.explore-btn:hover {
+    background-color: #FFFFFF;
+    color: #FF9500;
+}
+
+.pricing-btn:hover {
+    background-color: #FF9500;
+    color: #FFFFFF;
+}
+
 /*  Partner Logos  */
 .partners {
     background-color: #FFFFFF;
