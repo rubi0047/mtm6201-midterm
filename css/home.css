@@ -868,7 +868,7 @@ hr {
     color: #262626;
     font-weight: 500;
     margin: 0; /* Removes extra margin */
-    line-height: 1.5; /* Prevents extra space */
+    line-height: 1.5;
 }
 
 .faq-action:hover {
@@ -893,3 +893,5 @@ hr {
     width: 15px;
     height: 15px;
 }
+
+/* Footer Section */
