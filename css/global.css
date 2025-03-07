@@ -22,7 +22,7 @@
     --background-light: #FFFFFF; /* White sections */
     --background-dark: #F7F7F8; /* Light gray background */
     
-    /* 🔹 Borders & Dividers */
+    /* Borders & Dividers */
     --border-color: #EAEAEA; /* Default border color */
     --border-light: #F1F1F3; /* Lightest border color */
 
@@ -55,19 +55,19 @@
     font-style: normal;
   }
   
-  .be-vietnam-pro-medium {
+.be-vietnam-pro-medium {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 500;
     font-style: normal;
   }
   
-  .be-vietnam-pro-semibold {
+.be-vietnam-pro-semibold {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 600;
     font-style: normal;
   }
   
-  .be-vietnam-pro-bold {
+.be-vietnam-pro-bold {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -79,6 +79,23 @@ body {
     font-size: 14px;
     color: #262626;
     line-height: 21px;
+}
+
+/* Skip Link (Hidden by Default, Visible on Focus) */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    background: #FF9500;
+    color: #FFFFFF;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 10px;
 }
 
 /*  Promo Banner  */
@@ -112,7 +129,7 @@ body {
 }
 
 /* Header (Navigation Bar) */
-   header {
+header {
     padding: 15px 20px;
 }
 
@@ -201,21 +218,4 @@ nav img {
 
 .signup-btn {
     font-size: 13px;
-}
-
-/* Skip Link (Hidden by Default, Visible on Focus) */
-.skip-link {
-    position: absolute;
-    top: -50px;
-    left: 10px;
-    background: #FF9500;
-    color: #FFFFFF;
-    padding: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    z-index: 100;
-}
-
-.skip-link:focus {
-    top: 10px;
 }
