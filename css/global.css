@@ -7,6 +7,47 @@
     box-sizing: border-box;
 }
 
+/* Site Wide Colours */
+:root {
+    /* Primary & Secondary Colors */
+    --primary-color: #FF9500; /* Main brand color */
+    --secondary-color: #F8F8F8; /* Light gray background */
+
+    /* Text Colors */
+    --text-color: #262626; /* Default dark text */
+    --heading-color: #000000; /* Headings */
+    --subtext-color: #4C4C4D; /* Lighter gray text */
+
+    /* Background Colors */
+    --background-light: #FFFFFF; /* White sections */
+    --background-dark: #F7F7F8; /* Light gray background */
+    
+    /* 🔹 Borders & Dividers */
+    --border-color: #EAEAEA; /* Default border color */
+    --border-light: #F1F1F3; /* Lightest border color */
+
+    /* Buttons */
+    --button-primary: #FF9500; /* Main button color */
+    --button-primary-hover: #E07B00; /* Hover color */
+    --button-secondary: #FFFFFF; /* White button */
+    --button-secondary-hover: #F1F1F3; /* White button hover */
+
+    /* Icons & Highlights */
+    --icon-bg: #FEF4E8; /* Background for icons */
+    --icon-hover: #FF9500; /* Icon hover effect */
+    --cross-icon-bg: #FFFFFF; /* Background for "X" icons */
+    --cross-icon-hover: #262626; /* Dark hover for "X" */
+
+    /* Pricing Cards */
+    --pricing-header-bg: #FFF9F0; /* Lightest orange */
+    --pricing-header-border: #FFEACC; /* Border for pricing header */
+    --pricing-plan-bg: #FFFFFF; /* White card */
+    
+    /* Other Elements */
+    --faq-bg: #FFFFFF; /* FAQ Card background */
+    --faq-hover: #EAEAEA; /* Hover effect */
+}
+
 /* Custom Font */
 .be-vietnam-pro-regular {
     font-family: "Be Vietnam Pro", sans-serif;
