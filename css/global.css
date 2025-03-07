@@ -46,6 +46,10 @@
     /* Other Elements */
     --faq-bg: #FFFFFF; /* FAQ Card background */
     --faq-hover: #EAEAEA; /* Hover effect */
+
+    /* Border Radius (varied) */
+    --border-radius-sm: 6px; /* Small rounded corners */
+    --border-radius-md: 8px; /* Medium rounded corners */
 }
 
 /* Custom Font */

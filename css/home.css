@@ -1,22 +1,13 @@
-/* Homepage Styles */
-
-/* Center Content */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 5px;
-    background-color:#F7F7F8;
-}
-
+/* Main Content */
 .main-content {
-    background-color: #F7F7F8;
+    background-color: var(--background-dark);
 }
 
-/* Hero Section  */
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 55px 30px 40px 30px;
-    background-color: #F7F7F8;
+    background-color: var(--background-dark);
 }
 
 /* Unlock Potential */
@@ -25,10 +16,10 @@
     align-items: center;
     gap: 20px;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: var(--background-light);
     padding: 14px;
-    border-radius: 8px;
-    border: 1px solid #F1F1F3;
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-light);
     position: relative; /* Needed for absolute positioning of lines */
 }
 
@@ -45,7 +36,7 @@
 .unlockPotential img {
     height: 60px;
     width: 60px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-md);
     position: relative;
     z-index: 1; /* Moves the icon behind the lines */
 }
@@ -56,8 +47,8 @@
     position: absolute;
     width: 25px; 
     height: 4px;
-    background: #262626;
-    border-radius: 20px;
+    background: var(--text-color);
+    border-radius: var(--border-radius-sm);
     z-index: 2; /* Ensures the lines are above the icon */
 }
 
@@ -84,12 +75,13 @@
     right: 40px;
     width: 20px;
     height: 4px;
-    background: #262626;
-    border-radius: 20px;
+    background: var(--text-color);
+    border-radius: var(--border-radius-sm);
     transform: rotate(95deg);
     z-index: 2; /* Keeps this line above the icon */
 }
 
+/* Hero Headings */
 .hero h1 {
     font-size: 20px;
     font-weight: 500;
@@ -97,7 +89,7 @@
 }
 
 .hero h1 strong {
-    color: #FF9500;
+    color: var(--primary-color);
 }
 
 .hero h2 {
@@ -108,11 +100,11 @@
     line-height: 45px;
 }
 
+/* Hero Paragraph */
 .hero p {
     font-size: 18px;
-    color: #262626;
-    padding-right: 20px;
-    padding-left: 20px;
+    color: var(--text-color);
+    padding: 0 20px;
     margin-bottom: 55px;
 }
 
@@ -123,33 +115,34 @@
     gap: 20px;
 }
 
+/* Explore Button */
 .explore-btn {
-    background-color: #FF9500;
+    background-color: var(--primary-color);
     font-size: 18px;
-    color: #FFFFFF;
+    color: var(--button-secondary);
     border: none;
-    padding: 14px 20px 14px 20px;
-    border-radius: 8px;
-}
-
-.pricing-btn {
-    background-color: #FFFFFF;
-    font-size: 18px;
-    color: #262626;
-    border: 1px solid #F1F1F3;
-    padding: 14px 20px 14px 20px;
-    border-radius: 8px;
-    border: 1px solid #F1F1F3;
+    padding: 14px 20px;
+    border-radius: var(--border-radius-md);
 }
 
 .explore-btn:hover {
-    background-color: #FFFFFF;
-    color: #FF9500;
+    background-color: var(--button-secondary);
+    color: var(--primary-color);
+}
+
+/* Pricing Button */
+.pricing-btn {
+    background-color: var(--button-secondary);
+    font-size: 18px;
+    color: var(--text-color);
+    padding: 14px 20px;
+    border: 1px solid var(--border-light);
+    border-radius: var(--border-radius-md);
 }
 
 .pricing-btn:hover {
-    background-color: #FF9500;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--button-secondary);
 }
 
 /*  Partner Logos  */
