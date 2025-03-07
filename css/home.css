@@ -787,9 +787,10 @@
     border: 1px solid #EAEAEA;
     border-radius: 12px;
     padding: 20px;
-    max-width: 450px;
+    max-width: 1200px;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
 }
 
 /* Header Section */
@@ -797,13 +798,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
 }
 
 /* Question Title */
 .faq-header h2 {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
     margin: 0;
+    padding: 15px 0;
 }
 
 /* Close Button (X) */
@@ -811,7 +814,7 @@
     background: #FEF4E8;
     border: none;
     border-radius: 8px;
-    padding: 8px;
+    padding: 20px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -821,6 +824,7 @@
 }
 
 /* Horizontal Divider */
+
 hr {
     border: none;
     height: 1px;
@@ -831,6 +835,7 @@ hr {
 /* Answer Text */
 .faq-card p {
     font-size: 16px;
+    text-align: left;
     color: #262626;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -844,7 +849,7 @@ hr {
     background: #F8F8F8;
     border: none;
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
@@ -852,12 +857,33 @@ hr {
     transition: background 0.3s ease;
 }
 
+.faq-action p {
+    font-size: 18px;
+    color: #262626;
+    font-weight: 500;
+    margin: 0; /* 🔥 Removes extra margin */
+    line-height: 1.5; /* 🔥 Prevents extra space */
+}
+
 .faq-action:hover {
     background: #EAEAEA;
 }
 
+/* White Circle Around Arrow */
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 60px; /* Circle size */
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevents shrinking in flexbox */
+}
+
 /* Arrow Icon */
-.faq-action img {
-    width: 20px;
-    height: 20px;
+.icon-circle img {
+    width: 15px;
+    height: 15px;
 }
