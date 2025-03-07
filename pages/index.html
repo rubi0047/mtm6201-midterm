@@ -22,74 +22,87 @@
     <a href="#footer" class="skip-link">Skip to Footer</a>
 
     <!-- Promo Banner -->
-<div class="rpt-wrapper" itemscope itemtype="https://schema.org/SpecialAnnouncement">
-    <div class="promo-container">
-        <div class="promo-banner">
-            <a href="#" aria-label="Limited-time offer: Free Courses, Sale Ends Soon. Click to learn more."
-                itemprop="announcementLocation">
-                <span itemprop="name">Free Courses ✨ Sale Ends Soon, Get It Now ➔</span>
-            </a>
-            <meta itemprop="category" content="Education Promotion">
-            <meta itemprop="datePosted" content="2024-03-06">
-        </div>
-    </div>  
+    <div class="rpt-wrapper" itemscope itemtype="https://schema.org/SpecialAnnouncement">
+        <div class="promo-container">
+            <div class="promo-banner">
+                <a href="#" aria-label="Limited-time offer: Free Courses, Sale Ends Soon. Click to learn more."
+                    itemprop="announcementLocation">
+                    <span itemprop="name">Free Courses ✨ Sale Ends Soon, Get It Now ➔</span>
+                </a>
+                <meta itemprop="category" content="Education Promotion">
+                <meta itemprop="datePosted" content="2024-03-06">
+            </div>
+        </div>  
 
-    <!-- Header (Navigation) -->
-    <header role="banner" itemscope itemtype="https://schema.org/WebSite">
-        <meta itemprop="url" content="https://www.yoursite.com">
-        <div class="nav-wrapper">
-            <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                <img src="/images/logo-mobile.png" alt="Company Logo" aria-label="Company Home" itemprop="logo">
-                <ul class="nav-menu" itemscope itemtype="https://schema.org/BreadcrumbList">
-                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a class="active" href="./index.html" aria-label="Go to Home Page" itemprop="item">
-                            <span itemprop="name">Home</span>
-                        </a>
-                        <meta itemprop="position" content="1">
-                    </li>
-                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="./pricing.html" aria-label="View Pricing Plans" itemprop="item">
-                            <span itemprop="name">Pricing</span>
-                        </a>
-                        <meta itemprop="position" content="2">
-                    </li>
-                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="./contact.html" aria-label="Contact Us" itemprop="item">
-                            <span itemprop="name">Contact</span>
-                        </a>
-                        <meta itemprop="position" content="3">
-                    </li>
-                </ul>
-                <div class="nav-links">
-                    <a href="#" class="signup-btn" aria-label="Sign Up for an Account" itemprop="signUpAction">Sign Up</a>
-                    <a href="#" class="login-btn" aria-label="Log into Your Account" itemprop="loginAction">Login</a>
-                </div>
-            </nav>
-        </div>
-        <hr>
-    </header>
-</div>
+        <!-- Header (Navigation) -->
+        <header role="banner" itemscope itemtype="https://schema.org/WebSite">
+            <meta itemprop="url" content="https://www.yoursite.com">
+            <div class="nav-wrapper">
+                <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <img src="/images/logo-mobile.png" alt="Company Logo" aria-label="Company Home" itemprop="logo">
+                    <ul class="nav-menu" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a class="active" href="./index.html" aria-label="Go to Home Page" itemprop="item">
+                                <span itemprop="name">Home</span>
+                            </a>
+                            <meta itemprop="position" content="1">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="./pricing.html" aria-label="View Pricing Plans" itemprop="item">
+                                <span itemprop="name">Pricing</span>
+                            </a>
+                            <meta itemprop="position" content="2">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="./contact.html" aria-label="Contact Us" itemprop="item">
+                                <span itemprop="name">Contact</span>
+                            </a>
+                            <meta itemprop="position" content="3">
+                        </li>
+                    </ul>
+                    <div class="nav-links">
+                        <a href="#" class="signup-btn" aria-label="Sign Up for an Account" itemprop="signUpAction">Sign Up</a>
+                        <a href="#" class="login-btn" aria-label="Log into Your Account" itemprop="loginAction">Login</a>
+                    </div>
+                </nav>
+            </div>
+            <hr>
+        </header>
+    </div>
 
 
     <!-- Main Content -->
-    <main class="main-content" id="main-content" role="main">
+    <main class="main-content" id="main-content" role="main" itemscope itemtype="https://schema.org/WebPage">
 
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" aria-labelledby="hero-heading" itemscope itemtype="https://schema.org/CreativeWork">
+            <meta itemprop="about" content="Online courses for design and development to enhance creative skills.">
+            
             <div class="unlockPotential">
-                <div class="lines">
-                    <span class="extra-line"></span> <!-- Third Pseudo-Elements/Line -->
-                    <img src="/images/hero_icon.png" alt="Company logo with a small depiction of a lightning bolt.">
+                <div class="lines" aria-hidden="true">
+                    <span class="extra-line"></span> <!-- Third Pseudo-Element Line -->
+                    <img src="/images/hero_icon.png" alt="Company logo with a small depiction of a lightning bolt." itemprop="image">
                 </div>
-                <h1><strong>Unlock</strong> Your Creative Potential</h1>
+                <h1 id="hero-heading"><strong itemprop="headline">Unlock</strong> Your Creative Potential</h1>
             </div>
-            <h2>with Online Design and Development Courses.</h2>
-            <p>Learn from Industry Experts and Enhance Your Skills.</p>
+            
+            <h2 itemprop="alternativeHeadline">with Online Design and Development Courses.</h2>
+            <p itemprop="description">Learn from Industry Experts and Enhance Your Skills.</p>
+            
             <div class="hero-buttons">
-                <button class="explore-btn">Explore Courses</button>
-                <button class="pricing-btn">View Pricing</button>
+                <button class="explore-btn" aria-label="Browse available courses" 
+                    itemscope itemtype="https://schema.org/Action">
+                    <span itemprop="name">Explore Courses</span>
+                </button>
+                
+                <button class="pricing-btn" aria-label="View pricing options" 
+                    itemscope itemtype="https://schema.org/Action">
+                    <span itemprop="name">View Pricing</span>
+                </button>
             </div>
         </section>
+
+
 
         <!-- Partner Logos -->
         <div class="container">
