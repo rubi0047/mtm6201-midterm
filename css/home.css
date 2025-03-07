@@ -123,7 +123,7 @@
     gap: 20px;
 }
 
-.hero-buttons .explore-btn {
+.explore-btn {
     background-color: #FF9500;
     font-size: 18px;
     color: #FFFFFF;
@@ -132,13 +132,14 @@
     border-radius: 8px;
 }
 
-.hero-buttons .pricing-btn {
+.pricing-btn {
     background-color: #FFFFFF;
-    font-size: 20px;
+    font-size: 18px;
     color: #262626;
     border: 1px solid #F1F1F3;
     padding: 14px 20px 14px 20px;
     border-radius: 8px;
+    border: 1px solid #F1F1F3;
 }
 
 .explore-btn:hover {
