@@ -313,7 +313,7 @@
 .benefit-crd-txt p:first-of-type {
     font-size: 25px;
     font-weight: 600;
-    color: #333333;
+    color: #4C4C4D;
     line-height: 26px;
     margin: 0;
     margin-bottom: 15px;
@@ -437,14 +437,14 @@
 .fundamental-crd h3 {
     font-size: 20px;
     font-weight: bold;
-    color: #000;
+    color: #262626;
     margin-bottom: 25px;
 }
 
 /* Course Description */
 .fundamental-crd p {
     font-size: 16px;
-    color: #333;
+    color: #4C4C4D;
     line-height: 1.5;
     margin-bottom: 30px;
 }
@@ -461,7 +461,7 @@
     background-color: #F8F8F8;
     font-size: 18px;
     font-weight: bold;
-    color: #000;
+    color: #262626;
     border: none;
     padding: 12px;
     border-radius: 8px;
@@ -686,7 +686,7 @@
 .plan-features li {
     display: flex;
     align-items: center;
-    background: white;
+    background: #FFFFFF;
     padding: 12px;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -732,7 +732,7 @@
 .get-started-btn {
     width: 100%;
     background-color: #FF9500;
-    color: white;
+    color: #FFFFFF;
     font-size: 18px;
     font-weight: 500;
     padding: 12px;
@@ -789,7 +789,7 @@
 
 /* FAQ Card */
 .faq-card {
-    background: white;
+    background: #FFFFFF;
     border: 1px solid #F1F1F3;
     border-radius: 12px;
     padding: 20px;
