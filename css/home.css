@@ -6,7 +6,7 @@
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 55px 30px 40px 30px;
+    padding: 55px 30px 40px;
     background-color: var(--background-dark);
 }
 
@@ -93,8 +93,7 @@
 }
 
 .hero h2 {
-    margin-top: 10px;
-    padding: 14px;
+    margin: 25px 0 20px;
     font-size: 30px;
     font-weight: 400;
     line-height: 45px;
@@ -115,14 +114,19 @@
     gap: 20px;
 }
 
+/* General Button Styles (Shared by Both Buttons) */
+.explore-btn, .pricing-btn {
+    font-size: 18px;
+    padding: 14px 20px;
+    border-radius: var(--border-radius-md);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
 /* Explore Button */
 .explore-btn {
     background-color: var(--primary-color);
-    font-size: 18px;
     color: var(--button-secondary);
     border: none;
-    padding: 14px 20px;
-    border-radius: var(--border-radius-md);
 }
 
 .explore-btn:hover {
@@ -133,11 +137,8 @@
 /* Pricing Button */
 .pricing-btn {
     background-color: var(--button-secondary);
-    font-size: 18px;
     color: var(--text-color);
-    padding: 14px 20px;
     border: 1px solid var(--border-light);
-    border-radius: var(--border-radius-md);
 }
 
 .pricing-btn:hover {
