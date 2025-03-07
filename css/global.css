@@ -86,8 +86,8 @@ body {
     position: absolute;
     top: -50px;
     left: 10px;
-    background: #FF9500;
-    color: #FFFFFF;
+    background: var(--primary-color);
+    color: var(--button-secondary);
     padding: 10px;
     font-weight: bold;
     text-decoration: none;
@@ -98,9 +98,9 @@ body {
     top: 10px;
 }
 
-/*  Promo Banner  */
+/* Promo Banner */
 .rpt-wrapper {
-    background-color: #F7F7F8;
+    background-color: var(--background-dark);
     padding: 20px;
     margin-bottom: -30px;
 }
@@ -110,17 +110,17 @@ body {
 }
 
 .promo-banner {
-    background-color: #FF9500;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--button-secondary);
     font-size: 16px;
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-around;
     border-radius: 6px;
 }
 
 .promo-banner a {
-    color: #FFFFFF;
+    color: var(--button-secondary);
     text-decoration: none;
 }
 
@@ -142,7 +142,7 @@ header {
     margin: 0 auto;
 }
 
-/* Ensure Navigation Uses Flexbox */
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -157,6 +157,7 @@ nav img {
     border-radius: 8px;
 }
 
+/* Navigation Menu */
 .nav-menu {
     list-style: none; /* Removes bullet points */
     display: flex; /* Aligns items horizontally */
@@ -169,8 +170,8 @@ nav img {
 .nav-menu li a {
     font-size: 13px;
     display: block; /* Ensures padding applies correctly */
-    background-color: #FF9500; /* Orange background */
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--button-secondary)
     padding: 10px 8px;
     border-radius: 6px; /* Rounded corners */
     text-decoration: none; /* Removes underline */
@@ -180,42 +181,51 @@ nav img {
 
 /* Active Page Styling */
 .nav-menu li a.active {
-    background-color: #E07B00; /* Darker orange */
+    background-color: var(--button-primary-hover);
     font-weight: bold;
 }
 
 /* Hover Effect */
 .nav-menu li a:hover {
-    background-color: #E07B00;
+    background-color: var(--button-primary-hover);
 }
 
 /* Align All Links & Buttons to the Right */
 .nav-links {
     display: flex;
     align-items: center;
-    color: #262626;
+    color: var(--text-color);
     gap: 20px;
 }
 
 /* Style for Navigation Links */
 .nav-links a {
     text-decoration: none;
-    color: #262626;
+    color: var(--text-color);
+}
+
+/* Style for Sign-Up Button */
+.nav-links .signup-btn {
+    font-size: 13px;
 }
 
 /* Style for Login Button */
 .nav-links .login-btn {
     font-size: 13px;
-    background-color: #FF9500;
-    color: #FFFFFF;
-    padding: 10px 20px 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--button-secondary);
+    padding: 10px 20px;
     border-radius: 6px;
 }
 
 .login-btn:hover {
-    background-color: #E07B00;
+    background-color: var(--button-primary-hover);
 }
 
-.signup-btn {
-    font-size: 13px;
+/* Horizontal Divider */
+hr {
+    border: none;
+    height: 1px;
+    background: var(--border-color);
+    margin: 15px 0;
 }
