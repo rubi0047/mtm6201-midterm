@@ -95,6 +95,7 @@ body {
     padding: 10px;
     font-weight: bold;
     text-decoration: none;
+    border-radius: var(--border-radius-sm);
     z-index: 100;
 }
 
@@ -110,7 +111,7 @@ body {
 }
 
 .promo-container {
-    padding: 40px 14px 10px 15px;
+    padding: 40px 15px 10px;
 }
 
 .promo-banner {
@@ -120,7 +121,7 @@ body {
     padding: 15px 20px;
     display: flex;
     justify-content: space-around;
-    border-radius: 6px;
+    border-radius: var(--border-radius-sm);
 }
 
 .promo-banner a {
@@ -158,7 +159,6 @@ nav {
 /* Logo Positioned on the Left */
 nav img {
     height: 42px;
-    border-radius: 8px;
 }
 
 /* Navigation Menu */
@@ -177,7 +177,7 @@ nav img {
     background-color: var(--primary-color);
     color: var(--button-secondary);
     padding: 10px 8px;
-    border-radius: 6px; /* Rounded corners */
+    border-radius: var(--border-radius-sm); /* Rounded corners */
     text-decoration: none; /* Removes underline */
     font-weight: 400;
     transition: background 0.3s ease;
@@ -219,7 +219,7 @@ nav img {
     background-color: var(--primary-color);
     color: var(--button-secondary);
     padding: 10px 20px;
-    border-radius: 6px;
+    border-radius: var(--border-radius-sm);
 }
 
 .login-btn:hover {
@@ -228,7 +228,6 @@ nav img {
 
 /* Horizontal Divider */
 hr {
-    border: none;
     height: 1px;
     background: var(--border-color);
     margin: 15px 0;
