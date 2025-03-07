@@ -253,7 +253,7 @@
     background-color: #F1F1F3;
 }
 
-/* Benefit Section */
+/* Repeat Text Formating */
 .splitter-text {
     text-align: left; /* Aligns text to the right */
 }
@@ -266,6 +266,7 @@
     line-height: 26px; /* Adjust to desired spacing */
 }
 
+/* Benefit Section */
 .benefit-list {
     display: flex;
     flex-direction: column;
@@ -737,4 +738,126 @@
 
 .get-started-btn:hover {
     background-color: #E07B00;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: #F7F7F8;
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.faq h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    font-size: 16px;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+.faq-bkrnd {
+    background-color: #FFFFFF;
+    padding: 45px;
+    border-radius: 8px;
+}
+
+/* Splitter text Altered for FAQ */
+.splitter-text-faq {
+    text-align: left;
+}
+
+.splitter-text-faq h2 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.splitter-text-faq p {
+    line-height: 26px;
+}
+
+/* FAQ Card */
+.faq-card {
+    background: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Section */
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Question Title */
+.faq-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Close Button (X) */
+.faq-close {
+    background: #FEF4E8;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-close:hover {
+    background: #FFD4A3;
+}
+
+/* Horizontal Divider */
+hr {
+    border: none;
+    height: 1px;
+    background: #EAEAEA;
+    margin: 15px 0;
+}
+
+/* Answer Text */
+.faq-card p {
+    font-size: 16px;
+    color: #262626;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Action Button (Bottom Section) */
+.faq-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F8F8F8;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-action:hover {
+    background: #EAEAEA;
+}
+
+/* Arrow Icon */
+.faq-action img {
+    width: 20px;
+    height: 20px;
 }
