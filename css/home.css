@@ -610,3 +610,130 @@
     background-color: #FF9500;
     color: #FFFFFF;
 }
+
+/* Pricing Card Styling */
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.plan {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Plan Header */
+.plan-header {
+    background: #FFF9F0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #FFEACC;
+}
+
+.plan-header h3 {
+    font-weight: 500;
+}
+
+/* Plan Price */
+.plan-price h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 35px 0;
+    color: #262626;
+}
+
+.plan-price span {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Features Section */
+.plan-features {
+    background: #F8F8F8;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid #F1F1F3;
+    margin: 20px 0;
+    margin-bottom: -1px;
+}
+
+.plan-features h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Feature List */
+.plan-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #EAEAEA;
+    font-size: 12px;
+    color: #262626;
+}
+
+/* Checkmark and Cross Icons */
+.icon {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    background: #FEF4E8;
+    color: #262626;
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+/* Hover Effect */
+.icon:hover {
+    background: #FF9500;
+    color: #FFFFFF;
+}
+
+/* Cross Icon */
+.icon.cross {
+    background: #FFFFFF;
+    color: #262626;
+    border: 1px solid #F1F1F3;
+}
+
+/* Hover Effect for ✗ */
+.icon.cross:hover {
+    background: #262626;
+    color: #FFFFFF;
+}
+
+/* Get Started Button */
+.get-started-btn {
+    width: 100%;
+    background-color: #FF9500;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px;
+    border-radius: 0 0 12px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #E07B00;
+}
