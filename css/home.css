@@ -762,7 +762,7 @@
 
 .faq-bkrnd {
     background-color: #FFFFFF;
-    padding: 45px;
+    padding: 45px 45px 1px 45px;
     border-radius: 8px;
 }
 
@@ -784,7 +784,7 @@
 /* FAQ Card */
 .faq-card {
     background: white;
-    border: 1px solid #EAEAEA;
+    border: 1px solid #F1F1F3;
     border-radius: 12px;
     padding: 20px;
     max-width: 1200px;
@@ -805,12 +805,13 @@
 .faq-header h2 {
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.5;
     margin: 0;
-    padding: 15px 0;
+    padding: 15px 10px 15px 0;
 }
 
 /* Close Button (X) */
-.faq-close {
+.faq-select {
     background: #FEF4E8;
     border: none;
     border-radius: 8px;
@@ -819,12 +820,11 @@
     transition: background 0.3s ease;
 }
 
-.faq-close:hover {
+.faq-select:hover {
     background: #FFD4A3;
 }
 
 /* Horizontal Divider */
-
 hr {
     border: none;
     height: 1px;
@@ -861,8 +861,8 @@ hr {
     font-size: 18px;
     color: #262626;
     font-weight: 500;
-    margin: 0; /* 🔥 Removes extra margin */
-    line-height: 1.5; /* 🔥 Prevents extra space */
+    margin: 0; /* Removes extra margin */
+    line-height: 1.5; /* Prevents extra space */
 }
 
 .faq-action:hover {
