@@ -9,26 +9,26 @@
 
 /* Site Wide Colours */
 :root {
-    /* Primary & Secondary Colors */
-    --primary-color: #FF9500; /* Main brand color */
+    /* Primary & Secondary Colour */
+    --primary-color: #FF9500; /* Main brand colour */
     --secondary-color: #F8F8F8; /* Light gray background */
 
-    /* Text Colors */
+    /* Text Colour */
     --text-color: #262626; /* Default dark text */
     --heading-color: #000000; /* Headings */
     --subtext-color: #4C4C4D; /* Lighter gray text */
 
-    /* Background Colors */
+    /* Background Colour */
     --background-light: #FFFFFF; /* White sections */
     --background-dark: #F7F7F8; /* Light gray background */
     
     /* Borders & Dividers */
-    --border-color: #EAEAEA; /* Default border color */
-    --border-light: #F1F1F3; /* Lightest border color */
+    --border-color: #EAEAEA; /* Default border colour */
+    --border-light: #F1F1F3; /* Lightest border colour */
 
     /* Buttons */
-    --button-primary: #FF9500; /* Main button color */
-    --button-primary-hover: #E07B00; /* Hover color */
+    --button-primary: #FF9500; /* Main button colour */
+    --button-primary-hover: #E07B00; /* Hover colour */
     --button-secondary: #FFFFFF; /* White button */
     --button-secondary-hover: #F1F1F3; /* White button hover */
 
