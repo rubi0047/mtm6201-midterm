@@ -171,7 +171,7 @@ nav img {
     font-size: 13px;
     display: block; /* Ensures padding applies correctly */
     background-color: var(--primary-color);
-    color: var(--button-secondary)
+    color: var(--button-secondary);
     padding: 10px 8px;
     border-radius: 6px; /* Rounded corners */
     text-decoration: none; /* Removes underline */
