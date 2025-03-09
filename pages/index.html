@@ -110,12 +110,12 @@
             <hr>
         </header>
     </div>
-    
+
     <!-- Main Content -->
     <main class="main-content" id="main-content" role="main" itemscope itemtype="https://schema.org/WebPage">
 
         <!-- Hero Section -->
-        <section class="hero" aria-labelledby="hero-heading" itemscope itemtype="https://schema.org/CreativeWork">
+        <section class="hero" aria-labelledby="hero-heading">
             <meta itemprop="about" content="Online courses for design and development to enhance creative skills.">
             
             <div class="unlockPotential">
@@ -130,24 +130,29 @@
             <p itemprop="description">Learn from Industry Experts and Enhance Your Skills.</p>
             
             <div class="hero-buttons">
-                <button class="explore-btn" aria-label="Browse available courses" 
-                    itemscope itemtype="https://schema.org/Action">
-                    <span itemprop="name">Explore Courses</span>
+                <!-- Buttons are grouped inside a div to maintain consistent spacing and alignment -->
+                <button class="explore-btn" aria-label="Browse available courses">
+                    <span>Explore Courses</span>
                 </button>
                 
-                <button class="pricing-btn" aria-label="View pricing options" 
-                    itemscope itemtype="https://schema.org/Action">
-                    <span itemprop="name">View Pricing</span>
+                <!-- Each button uses a span to ensure better control over styling and accessibility -->
+                <button class="pricing-btn" aria-label="View pricing options">
+                    <span>View Pricing</span>
                 </button>
             </div>
         </section>
 
+
         <!-- Partner Logos Section -->
         <div class="container">
             <div class="partners" itemscope itemtype="https://schema.org/WebPageElement">
+
+                <!-- The unordered list ensures logos are grouped for better structure and accessibility -->
                 <ul>
                     <li itemscope itemtype="https://schema.org/Organization">
                         <div class="logo-wrapper">
+
+                            <!-- The 'alt' attribute provides a text alternative for screen readers -->
                             <img src="/images/zapier.svg" alt="Zapier company logo" aria-label="Zapier - Workflow Automation" itemprop="logo">
                             <meta itemprop="name" content="Zapier">
                             <meta itemprop="description" content="Workflow Automation">
@@ -176,21 +181,21 @@
                     </li>
                     <li itemscope itemtype="https://schema.org/Organization">
                         <div class="logo-wrapper">
-                            <img src="/images/placeholder-partner-5.png" alt="Adobe company logo" aria-label="Adobe - Creative Software" itemprop="logo">
+                            <img src="/images/adobe.svg" alt="Adobe company logo" aria-label="Adobe - Creative Software" itemprop="logo">
                             <meta itemprop="name" content="Adobe">
                             <meta itemprop="description" content="Creative Software">
                         </div>
                     </li>
                     <li itemscope itemtype="https://schema.org/Organization">
                         <div class="logo-wrapper">
-                            <img src="/images/placeholder-partner-6.png" alt="Notion company logo" aria-label="Notion - Productivity and Note-taking" itemprop="logo">
+                            <img src="/images/notion.svg" alt="Notion company logo" aria-label="Notion - Productivity and Note-taking" itemprop="logo">
                             <meta itemprop="name" content="Notion">
                             <meta itemprop="description" content="Productivity and Note-taking">
                         </div>
                     </li>
                     <li itemscope itemtype="https://schema.org/Organization">
                         <div class="logo-wrapper">
-                            <img src="/images/placeholder-partner-7.png" alt="Netflix company logo" aria-label="Netflix - Streaming Service" itemprop="logo">
+                            <img src="/images/netflix.svg" alt="Netflix company logo" aria-label="Netflix - Streaming Service" itemprop="logo">
                             <meta itemprop="name" content="Netflix">
                             <meta itemprop="description" content="Streaming Service">
                         </div>

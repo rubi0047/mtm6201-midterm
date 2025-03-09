@@ -88,7 +88,7 @@ body {
 /* Skip Link (Hidden by Default, Visible on Focus) */
 .skip-link {
     position: absolute;
-    top: -50px;
+    top: -50px; /* Keeps the link off-screen until focused */
     left: 10px;
     background: var(--primary-color);
     color: var(--button-secondary);
@@ -96,9 +96,10 @@ body {
     font-weight: bold;
     text-decoration: none;
     border-radius: var(--border-radius-sm);
-    z-index: 100;
+    z-index: 100; /* Ensures the link stays above other elements */
 }
 
+/* Moves the skip link into view when focused for accessibility */
 .skip-link:focus {
     top: 10px;
 }
