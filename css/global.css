@@ -23,8 +23,8 @@
     --background-dark: #F7F7F8; /* Light gray background */
     
     /* Borders & Dividers */
-    --border-color: #EAEAEA; /* Default border colour */
-    --border-light: #F1F1F3; /* Lightest border colour */
+    --border-color: 1px solid #EAEAEA; /* Default border colour */
+    --border-light: 1px solid #F1F1F3; /* Light gray, commonly used for subtle borders */
 
     /* Buttons */
     --button-primary: #FF9500; /* Main button colour */

@@ -19,7 +19,8 @@
     background-color: var(--background-light);
     padding: 14px;
     border-radius: var(--border-radius-md);
-    border: 1px solid var(--border-light);
+    border: var(--border-light);
+    /* border: 1px solid #F1F1F3; */
     position: relative; /* Needed for absolute positioning of lines */
 }
 
@@ -170,7 +171,7 @@
 /* Logo Wrapper - Grey Border Around Each Image */
 .logo-wrapper {
     padding: 10px; /* Adds spacing around each logo */
-    border-right: 1px solid #F1F1F3;
+    border-right: var(--border-light);
     display: flex;
     justify-content: center; /* Centers logo inside the wrapper */
     align-items: center; /* Keeps logo vertically centered */
@@ -204,21 +205,20 @@
 
 /* Benefits Section */
 .benefits {
-    background-color: #F7F7F8;
-    text-align: center;
+    background-color: var(--background-dark);
     padding: 40px 25px;
 }
 
 .benefits h2 {
     font-size: 24px;
     font-weight: 600;
-    color: #262626;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .benefits p {
     font-size: 16px;
-    color: #262626;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
@@ -229,25 +229,25 @@
 }
 
 .view-all-btn {
-    background-color: #FFFFFF;
-    color: #262626;
-    padding: 14px 20px 14px 20px;
+    background-color: var(--button-secondary);
+    color: var(--text-color);
+    padding: 14px 20px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
     transition: background 0.3s ease;
-    border-radius: 8px;
-    border: 1px solid #F1F1F3;
+    border-radius: var(--border-radius-md);
+    border: var(--border-light);
     margin-bottom: 30px;
 }
 
 .view-all-btn:hover {
-    background-color: #F1F1F3;
+    background-color: var(--button-secondary-hover);
 }
 
-/* Repeat Text Formating */
+/* Repeat Text Formatting */
 .splitter-text {
-    text-align: left; /* Aligns text to the right */
+    text-align: left; /* Aligns text to the left */
 }
 
 .splitter-text h2 {
@@ -267,10 +267,10 @@
 }
 
 /* Benefit Card Styling */
-   .benefit-item {
-    background: white;
+.benefit-item {
+    background: var(--background-light);
     padding: 40px;
-    border-radius: 12px;
+    border-radius: var(--border-radius-md);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     position: relative;
     display: flex;
@@ -278,14 +278,13 @@
     justify-content: space-between;
     align-items: flex-start; /* Aligns content to the left */
     width: 100%; /* Ensures the card fills its container */
-   
 }
 
 /* Number in Top-Right Corner */
 .benefit-item h3 {
     font-size: 55px;
     font-weight: bold;
-    color: #262626;
+    color: var(--text-color);
     position: absolute;
     top: 45px;
     right: 40px;
@@ -294,8 +293,7 @@
 /* Benefit Text Container */
 .benefit-crd-txt {
     display: flex;
-    padding-top: 75px;
-    padding-bottom: 68px;
+    padding: 75px 0 68px;
     flex-direction: column;
     gap: 5px;
     text-align: left; /* Ensures text is aligned left */
@@ -305,19 +303,17 @@
 .benefit-crd-txt p:first-of-type {
     font-size: 25px;
     font-weight: 600;
-    color: #4C4C4D;
+    color: var(--subtext-color);
     line-height: 26px;
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px;
 }
 
 /* Description */
 .benefit-crd-txt p:last-of-type {
     font-size: 18px;
     font-weight: 400;
-    color: #4C4C4D;
+    color: var(--subtext-color);
     line-height: 1.5;
-    margin: 0;
 }
 
 /* Arrow Button (Bottom-Right Corner) */
@@ -328,19 +324,18 @@
 }
 
 .arrow-btn {
-    background: #F8F8F8;
-    color: #FF9500;
+    background: var(--faq-bg);
+    color: var(--primary-color);
     font-size: 35px;
-    border: 1px solid #F1F1F3;
-    padding-top: 10px;
-    padding: 11px 18px 11px 18px;
-    border-radius: 8px;
+    padding: 11px 18px;
+    border-radius: var(--border-radius-md);
+    border: var(--border-light);
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .arrow-btn:hover {
-    background-color: #F1F1F3;
+    background-color: var(--faq-hover);
 }
 
 .benefit-item:nth-child(5), .benefit-item:nth-child(6) {
