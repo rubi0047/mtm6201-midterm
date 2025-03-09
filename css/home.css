@@ -148,43 +148,43 @@
 
 /*  Partner Logos  */
 .partners {
-    background-color: #FFFFFF;
-    margin-left: 30px;
-    margin-right: 30px;
+    background-color: var(--background-light);
+    margin: 0 30px;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #F1F1F3;
 }
 
-.partners img {
-    height: 30px;
-    padding-right: 15px;
-}
-
+/* Partner Logos List */
 .partners ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Evenly distributes logos */
     list-style: none;
-    padding: 0;
+    padding: 0; /* Removes default padding */
+}
+
+/* Individual Partner Logo */
+.partners img {
+    height: 30px; /* Sets a consistent logo size */
+    padding-right: 15px; /* Adds spacing between logos */
 }
 
 /* Logo Wrapper - Grey Border Around Each Image */
 .logo-wrapper {
-    padding: 10px;
+    padding: 10px; /* Adds spacing around each logo */
     border-right: 1px solid #F1F1F3;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centers logo inside the wrapper */
+    align-items: center; /* Keeps logo vertically centered */
 }
 
 /* Hide all logos in mobile view */
 .partners li {
-    display: none;
+    display: none; /* Initially hides all partner logos */
 }
 
 /* Show only the first 3 logos on mobile */
 .partners li:nth-child(-n+3) {
-    display: block;
+    display: block; /* Makes only the first 3 logos visible */
 }
 
 /* Large Homepage Photo */
