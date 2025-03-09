@@ -194,8 +194,7 @@
     width: 100%; /* Ensures it scales with the parent container */
     max-width: 1200px; /* Prevents it from becoming too large */
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px; /* Combines left and right padding */
 }
 
 .home-photo img {

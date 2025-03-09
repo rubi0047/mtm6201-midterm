@@ -211,79 +211,86 @@
         </div>
 
         <!-- Benefits Section -->
-        <section class="benefits" id="benefits">
+        <section class="benefits" id="benefits" aria-labelledby="benefits-heading" itemscope itemtype="https://schema.org/ItemList">
+            <meta itemprop="name" content="Course Benefits">
             <div class="container">
                 <div class="splitter-text">
-                    <h2>Benefits</h2>
-                    <p>Discover the many reasons why our online courses provide the best learning experience. Theres so much to explore! Take a look at our individual options below, or click the view all button to see evrything.</p>
+                    <h2 id="benefits-heading" itemprop="name">Benefits</h2>
+                    <p itemprop="description">Discover the many reasons why our online courses provide the best learning experience. There's so much to explore! Take a look at our individual options below, or click the view all button to see everything.</p>
                     <div class="view-all">
-                        <button class="view-all-btn">View All</button>
+                        <button class="view-all-btn" aria-label="View all available benefits">View All</button>
                     </div>
                 </div>
                 <div class="benefit-list">
-                    <div class="benefit-item" role="article">
+                    <div class="benefit-item" role="article" aria-labelledby="benefit-01" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="1">
                         <div class="benefit-crd-txt">
-                            <h2>Flexible Learning Schedule</h2>
-                            <p>Fit your coursework around your existing commitments and obligations.</p>
+                            <h2 id="benefit-01" itemprop="name">Flexible Learning Schedule</h2>
+                            <p itemprop="description">Fit your coursework around your existing commitments and obligations.</p>
                         </div>
-                        <h3>01</h3>
+                        <h3>01</h3> <!-- Numbering helps visually indicate order of benefits -->
                         <div class="arrow-all">
-                            <button class="arrow-btn">➚</button>
+                            <button class="arrow-btn" aria-label="Read more about Flexible Learning Schedule">➚</button> <!-- Button with an icon to indicate expandable content -->
                         </div>
                     </div>
 
-                    <div class="benefit-item" role="article">
+                    <div class="benefit-item" role="article" aria-labelledby="benefit-02" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="2">
                         <div class="benefit-crd-txt">
-                            <h2>Expert Instructors</h2>
-                            <p>Learn from industry experts who have hands-on experience in design and development.</p>
+                            <h2 id="benefit-02" itemprop="name">Expert Instructors</h2>
+                            <p itemprop="description">Learn from industry experts who have hands-on experience in design and development.</p>
                         </div>
                         <h3>02</h3>
                         <div class="arrow-all">
-                            <button class="arrow-btn">➚</button>
+                            <button class="arrow-btn" aria-label="Read more about Expert Instructors">➚</button>
                         </div>
                     </div>
-                    
-                    <div class="benefit-item" role="article">
+
+                    <div class="benefit-item" role="article" aria-labelledby="benefit-03" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="3">
                         <div class="benefit-crd-txt">
-                            <h2>Diverse Course Offerings</h2>
-                            <p>Explore a wide range of design and development courses covering various topics.</p>
+                            <h2 id="benefit-03" itemprop="name">Diverse Course Offerings</h2>
+                            <p itemprop="description">Explore a wide range of design and development courses covering various topics.</p>
                         </div>
                         <h3>03</h3>  
                         <div class="arrow-all">
-                            <button class="arrow-btn">➚</button>
+                            <button class="arrow-btn" aria-label="Read more about Diverse Course Offerings">➚</button>
                         </div>
                     </div>
-                    
-                    <div class="benefit-item" role="article">
+
+                    <div class="benefit-item" role="article" aria-labelledby="benefit-04" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="4">
                         <div class="benefit-crd-txt">
-                            <h2>Updated Curriculum</h2>
-                            <p>Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
+                            <h2 id="benefit-04" itemprop="name">Updated Curriculum</h2>
+                            <p itemprop="description">Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
                         </div>
                         <h3>04</h3>
                         <div class="arrow-all">
-                            <button class="arrow-btn">➚</button>
+                            <button class="arrow-btn" aria-label="Read more about Updated Curriculum">➚</button>
                         </div>
                     </div>
-                   
-                    <div class="benefit-item" role="article">
+
+                    <div class="benefit-item" role="article" aria-labelledby="benefit-05" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="5">
                         <div class="benefit-crd-txt">
-                            <h2>Practical Projects and Assignments</h2>
-                            <p>Develop a portfolio showcasing your skills and abilities to potential employers.</p>
+                            <h2 id="benefit-05" itemprop="name">Practical Projects and Assignments</h2>
+                            <p itemprop="description">Develop a portfolio showcasing your skills and abilities to potential employers.</p>
                         </div>
                         <h3>05</h3> 
                         <div class="arrow-all">
-                            <button class="arrow-btn">➚</button>
+                            <button class="arrow-btn" aria-label="Read more about Practical Projects and Assignments">➚</button>
                         </div>
                     </div>
-                    
-                    <div class="benefit-item" role="article">
+
+                    <div class="benefit-item" role="article" aria-labelledby="benefit-06" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="6">
                         <div class="benefit-crd-txt">
-                            <h2>Interactive Learning Environment</h2>
-                            <p>Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
+                            <h2 id="benefit-06" itemprop="name">Interactive Learning Environment</h2>
+                            <p itemprop="description">Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
                         </div>
                         <h3>06</h3>  
                         <div class="arrow-all">
-                            <button class="arrow-btn">➚</button>
+                            <button class="arrow-btn" aria-label="Read more about Interactive Learning Environment">➚</button>
                         </div>
                     </div>
                 </div>
