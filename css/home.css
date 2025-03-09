@@ -45,7 +45,6 @@
 .lines::before, .lines::after {
     content: "";
     position: absolute;
-    width: 25px; 
     height: 4px;
     background: var(--text-color);
     border-radius: var(--border-radius-sm);
