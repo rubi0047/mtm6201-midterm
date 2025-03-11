@@ -14,7 +14,7 @@
 .unlockPotential {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     justify-content: center;
     background-color: var(--background-light);
     padding: 14px;
@@ -88,7 +88,7 @@
 }
 
 .hero h1 strong {
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .hero h2 {
@@ -124,7 +124,7 @@
 /* Explore Button */
 .explore-btn {
     background-color: var(--primary-color);
-    color: var(--button-secondary);
+    color: var(--text-color);
     border: none;
 }
 
