@@ -170,7 +170,7 @@ nav img {
 .nav-menu {
     list-style: none; /* Removes bullet points */
     display: flex; /* Aligns items horizontally */
-    gap: 14px; /* Adds space between menu items */
+    gap: 8px; /* Adds space between menu items */
     padding: 0;
     margin: 0;
 }

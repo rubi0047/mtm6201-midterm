@@ -419,7 +419,7 @@
     font-size: 16px;
     color: var(--text-color);
     border: var(--border-light);
-    padding: 6px 14px;
+    padding: 8px 16px;
     border-radius: var(--border-radius-sm);
 }
 
