@@ -766,45 +766,21 @@
     background-color: #E07B00;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* FAQ Section */
 .faq {
-    background-color: var(--background-light);
+    background-color: var(--background-dark);
     text-align: center;
     padding: 40px 25px;
 }
 
-.faq h2 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #262626;
-    margin-bottom: 10px;
-}
-
-.faq p {
-    font-size: 16px;
-    color: #262626;
-    margin-bottom: 20px;
-}
-
+/* FAQ Container */
 .faq-bkrnd {
-    background-color: #FFFFFF;
+    background-color: var(--background-light);
     padding: 45px 45px 1px 45px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-md);
 }
 
-/* Splitter text Altered for FAQ */
+/* Splitter Text for FAQ */
 .splitter-text-faq {
     text-align: left;
 }
@@ -819,11 +795,26 @@
     line-height: 26px;
 }
 
+/* FAQ Heading */
+.faq h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+/* FAQ Description */
+.faq p {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
 /* FAQ Card */
 .faq-card {
-    background: #FFFFFF;
-    border: 1px solid #F1F1F3;
-    border-radius: 12px;
+    background: var(--background-light);
+    border: var(--border-light);
+    border-radius: var(--border-radius-md);
     padding: 20px;
     max-width: 1200px;
     width: 100%;
@@ -831,7 +822,7 @@
     margin-bottom: 30px;
 }
 
-/* Header Section */
+/* FAQ Header */
 .faq-header {
     display: flex;
     justify-content: space-between;
@@ -850,9 +841,9 @@
 
 /* Close Button (X) */
 .faq-select {
-    background: #FEF4E8;
+    background: var(--icon-bg);
     border: none;
-    border-radius: 8px;
+    border-radius: var(--border-radius-md);
     padding: 20px;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -874,37 +865,37 @@ hr {
 .faq-card p {
     font-size: 16px;
     text-align: left;
-    color: #262626;
+    color: var(--text-color);
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-/* Action Button (Bottom Section) */
+/* FAQ Action Button */
 .faq-action {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #F8F8F8;
+    background: var(--secondary-color);
     border: none;
     width: 100%;
     padding: 14px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-md);
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .faq-action p {
     font-size: 18px;
-    color: #262626;
+    color: var(--text-color);
     font-weight: 500;
     margin: 0; /* Removes extra margin */
     line-height: 1.5;
 }
 
 .faq-action:hover {
-    background: #EAEAEA;
+    background: var(--hover);
 }
 
 /* White Circle Around Arrow */
@@ -912,7 +903,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #FFFFFF;
+    background: var(--background-light);
     width: 60px;
     height: 60px;
     border-radius: 50%;
