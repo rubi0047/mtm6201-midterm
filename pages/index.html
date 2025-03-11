@@ -298,132 +298,110 @@
         </section>
 
         <!-- Our Courses -->
-        <section id="courses" class="courses">
+        <section id="courses" class="courses" aria-labelledby="courses-heading" itemscope itemtype="https://schema.org/ItemList">
+            <meta itemprop="name" content="Our Courses">
+            <meta itemprop="description" content="Explore a diverse range of online courses designed to help you master design and development. Learn from industry experts, build real-world projects, and take your skills to the next level—all at your own pace.">
+            
             <div class="container">
                 <div class="splitter-text">
-                    <h2>Our Courses</h2>
-                    <p>Explore a diverse range of online courses designed to help you master design and development. Learn from industry experts, build real-world projects, and take your skills to the next level—all at your own pace. 🚀✨</p>
+                    <!-- The <h2> heading provides a clear section title, improving readability and SEO. -->
+                    <h2 id="courses-heading" itemprop="name">Our Courses</h2>
+                    
+                    <!-- The paragraph introduces the course offerings and encourages user engagement. -->
+                    <p itemprop="description">Explore a diverse range of online courses designed to help you master design and development. Learn from industry experts, build real-world projects, and take your skills to the next level—all at your own pace. 🚀✨</p>
+                    
                     <div class="view-all">
-                        <button class="view-all-btn">View All</button>
+                        <button class="view-all-btn" aria-label="View all available courses" itemprop="potentialAction">View All</button>
                     </div>
                 </div>
-
-                <article>
-                    <div class="fundamentals">
+                
+                <!-- Course List -->
+                <article aria-labelledby="course-1" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                    <meta itemprop="position" content="1">
+                    <div class="fundamentals" itemscope itemtype="https://schema.org/Course">
                         <div class="crd-img">
-                            <img src="/images/person_writing.png" alt="A person writing on a cork board">
+                            <img src="/images/person_writing.png" alt="A person writing on a cork board" itemprop="image">
                         </div>
                         <div class="option-btns">
-                            <button class="btn-1">4 weeks</button>
-                            <button class="btn-1">Beginner</button>
+                            <button class="btn-1" aria-label="Course duration: 4 weeks" itemprop="duration">4 weeks</button>
+                            <button class="btn-1" aria-label="Beginner level course" itemprop="educationalLevel">Beginner</button>
                         </div>
                         <div class="fundamental-crd">
-                            <h2>By John Smith</h2>
-                            <h3>Web Design Fundamentals</h3>
-                            <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
+                            <h2 id="course-1" itemprop="provider">By John Smith</h2>
+                            <h3 itemprop="name">Web Design Fundamentals</h3>
+                            <p itemprop="description">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
                         </div>
                         <div class="getIt">
-                            <button class="getit-btn">Get it Now</button>
+                            <button class="getit-btn" aria-label="Enroll in Web Design Fundamentals" itemprop="offers">Get it Now</button>
                         </div>
                     </div>
                 </article>
 
-                <article>
-                    <div class="fundamentals">
+                <article aria-labelledby="course-2" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                    <!-- The <meta> tag defines the course's position in the list, ensuring structured ordering. -->
+                    <meta itemprop="position" content="2">
+                    
+                    <div class="fundamentals" itemscope itemtype="https://schema.org/Course">
                         <div class="crd-img">
-                            <img src="/images/person_computer.png" alt="A man sitting at his desk looking at his computer.">
+                            <!-- The <img> tag provides a visual representation of the course, improving engagement. -->
+                            <img src="/images/person_computer.png" alt="A man sitting at his desk looking at his computer." itemprop="image">
                         </div>
+                        
                         <div class="option-btns">
-                            <button class="btn-1">6 weeks</button>
-                            <button class="btn-1">Intermediate</button>
+                            <button class="btn-1" aria-label="Course duration: 6 weeks" itemprop="duration">6 weeks</button>
+                            <button class="btn-1" aria-label="Intermediate level course" itemprop="educationalLevel">Intermediate</button>
                         </div>
+                        
                         <div class="fundamental-crd">
-                            <h2>By Emily Johnson</h2>
-                            <h3>UI/UX Design</h3>
-                            <p>Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
+                            <h2 id="course-2" itemprop="provider">By Emily Johnson</h2>
+                            <h3 itemprop="name">UI/UX Design</h3>
+                            <p itemprop="description">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
                         </div>
+                        
                         <div class="getIt">
-                            <button class="getit-btn">Get it Now</button>
+                            <button class="getit-btn" aria-label="Enroll in UI/UX Design" itemprop="offers">Get it Now</button>
                         </div>
                     </div>
                 </article>
 
-                <article>
-                    <div class="fundamentals">
+                <article aria-labelledby="course-3" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                    <meta itemprop="position" content="3">
+                    <div class="fundamentals" itemscope itemtype="https://schema.org/Course">
                         <div class="crd-img">
-                            <img src="/images/book_phone.png" alt="A sketch book sitting on a desk. Someone is also typing on a phone in the foreground.">
+                            <img src="/images/book_phone.png" alt="A sketch book sitting on a desk. Someone is also typing on a phone in the foreground." itemprop="image">
                         </div>
                         <div class="option-btns">
-                            <button class="btn-1">8 weeks</button>
-                            <button class="btn-1">Intermediate</button>
+                            <button class="btn-1" aria-label="Course duration: 8 weeks" itemprop="duration">8 weeks</button>
+                            <button class="btn-1" aria-label="Intermediate level course" itemprop="educationalLevel">Intermediate</button>
                         </div>
                         <div class="fundamental-crd">
-                            <h2>By David Brown</h2>
-                            <h3>Mobile App Development</h3>
-                            <p>Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
+                            <h2 id="course-3" itemprop="provider">By David Brown</h2>
+                            <h3 itemprop="name">Mobile App Development</h3>
+                            <p itemprop="description">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
                         </div>
                         <div class="getIt">
-                            <button class="getit-btn">Get it Now</button>
+                            <button class="getit-btn" aria-label="Enroll in Mobile App Development" itemprop="offers">Get it Now</button>
                         </div>
                     </div>
                 </article>
 
-                <article>
-                    <div class="fundamentals">
+                <article aria-labelledby="course-4" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                    <meta itemprop="position" content="4">
+                    <div class="fundamentals" itemscope itemtype="https://schema.org/Course">
                         <div class="crd-img">
-                            <img src="/images/colour_swatch.png" alt="A desk with office supplies. Someone is holding a set of colour swatches.">
+                            <img src="/images/colour_swatch.png" alt="A desk with office supplies. Someone is holding a set of colour swatches." itemprop="image">
                         </div>
                         <div class="option-btns">
-                            <button class="btn-1">10 weeks</button>
-                            <button class="btn-1">Beginner</button>
+                            <button class="btn-1" aria-label="Course duration: 10 weeks" itemprop="duration">10 weeks</button>
+                            <button class="btn-1" aria-label="Beginner level course" itemprop="educationalLevel">Beginner</button>
                         </div>
                         <div class="fundamental-crd">
-                            <h2>By Sarah Thompson</h2>
-                            <h3>Graphic Design for Beginners</h3>
-                            <p>Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
+                            <h2 id="course-4" itemprop="provider">By Sarah Thompson</h2>
+                            <h3 itemprop="name">Graphic Design for Beginners</h3>
+                            <p itemprop="description">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques.</p>
                         </div>
                         <div class="getIt">
-                            <button class="getit-btn">Get it Now</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="fundamentals">
-                        <div class="crd-img">
-                            <img src="/images/girl_screen.png" alt="A young woman typing on a computer.">
-                        </div>
-                        <div class="option-btns">
-                            <button class="btn-1">10 weeks</button>
-                            <button class="btn-1">Intermediate</button>
-                        </div>
-                        <div class="fundamental-crd">
-                            <h2>By Michael Adams</h2>
-                            <h3>Front-End Web Development</h3>
-                            <p>Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
-                        </div>
-                        <div class="getIt">
-                            <button class="getit-btn">Get it Now</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="fundamentals">
-                        <div class="crd-img">
-                            <img src="/images/girl_headphones.png" alt="A young smilling at her computer while wearing headphones">
-                        </div>
-                        <div class="option-btns">
-                            <button class="btn-1">6 weeks</button>
-                            <button class="btn-1">Advanced</button>
-                        </div>
-                        <div class="fundamental-crd">
-                            <h2>By Jennifer Wilson</h2>
-                            <h3>Advanced JavaScript</h3>
-                            <p>Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
-                        </div>
-                        <div class="getIt">
-                            <button class="getit-btn">Get it Now</button>
+                            <button class="getit-btn" aria-label="Enroll in Graphic Design for Beginners" itemprop="offers">Get it Now</button>
                         </div>
                     </div>
                 </article>
