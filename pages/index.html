@@ -444,10 +444,12 @@
                 </div>
 
                 <div class="testimonial-crd" aria-labelledby="testimonial-3" itemscope itemprop="review" itemtype="https://schema.org/Review">
+                    <!-- Wrapping the entire testimonial in a div allows for better styling, layout control, and accessibility grouping. -->
                     <p id="testimonial-3" itemprop="reviewBody">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
                     <div class="testimonial-footer">
                         <div class="profile" itemscope itemprop="author" itemtype="https://schema.org/Person">
                             <img src="/images/emily.png" alt="Emily posing for a headshot" itemprop="image">
+                            <!-- Using an <h2> for the reviewer's name ensures a clear hierarchy and improves scannability for users. -->
                             <h2 itemprop="name">Emily R</h2>
                         </div>
                         <button class="readFull-btn" aria-label="Read full testimonial from Emily R">Read Full Story</button>
@@ -468,89 +470,108 @@
         </section>
 
         <!-- Our Pricing -->
-        <section id="pricing" class="pricing">
+        <section id="pricing" class="pricing" aria-labelledby="pricing-heading" itemscope itemtype="https://schema.org/OfferCatalog">
+            <meta itemprop="name" content="Course Pricing Plans">
+            <meta itemprop="description" content="Choose the best plan that suits your learning needs!">
+            
             <div class="container">
                 <div class="splitter-text">
-                    <h2>Our Pricing</h2>
-                    <p>Choose the best plan that suits your learning needs!</p>
+                    <h2 id="pricing-heading" itemprop="name">Our Pricing</h2>
+                    <p itemprop="description">Choose the best plan that suits your learning needs!</p>
                     <div class="pricing-toggle">
-                        <button class="mnth-btn">Monthly</button>
-                        <button class="yr-btn">Yearly</button>
+                        <button class="mnth-btn" aria-label="Switch to monthly pricing">Monthly</button>
+                        <button class="yr-btn" aria-label="Switch to yearly pricing">Yearly</button>
                     </div>                    
                 </div>
-        
+
                 <div class="pricing-plans">
-                    <div class="plan">
+                    <div class="plan" aria-labelledby="free-plan" itemscope itemprop="itemListElement" itemtype="https://schema.org/Offer">
+                        <meta itemprop="name" content="Free Plan">
+                        <meta itemprop="price" content="0">
+                        <meta itemprop="priceCurrency" content="USD">
+                        <meta itemprop="category" content="Education">
+                        <meta itemprop="availability" content="https://schema.org/InStock">
+
                         <div class="plan-header">
-                            <h2>Free Plan</h2>
+                            <h2 id="free-plan" itemprop="name">Free Plan</h2>
+                            <!-- This heading serves as both a visual title and an accessible label for screen readers using aria-labelledby. -->
                         </div>
                         <div class="plan-price">
-                            <h3>$0<span>/month</span></h3>
+                            <h3 itemprop="price">$0<span>/month</span></h3>
+                            <!-- The <span> inside <h3> keeps "/month" styled separately, ensuring proper formatting while maintaining semantic HTML structure. -->
                         </div>
                         <div class="plan-features">
                             <h4>Available Features</h4>
                             <ul>
-                                <li><span class="icon">✓</span> Access to selected free courses.</li>
-                                <li><span class="icon">✓</span> Limited course materials and resources.</li>
-                                <li><span class="icon">✓</span> Basic community support.</li>
-                                <li><span class="icon">✓</span> No certification upon completion.</li>
-                                <li><span class="icon">✓</span> Ad-supported platform.</li>
+                                <li itemprop="description"><span class="icon">✓</span> Access to selected free courses.</li>
+                                <li itemprop="description"><span class="icon">✓</span> Limited course materials and resources.</li>
+                                <li itemprop="description"><span class="icon">✓</span> Basic community support.</li>
+                                <li itemprop="description"><span class="icon">✓</span> No certification upon completion.</li>
+                                <li itemprop="description"><span class="icon">✓</span> Ad-supported platform.</li>
                                 <li><span class="icon cross">✗</span> Access to exclusive Pro Plan community forums.</li>
                                 <li><span class="icon cross">✗</span> Early access to new courses and updates.</li>
                             </ul>
                         </div>
-                        <button class="get-started-btn">Get Started</button>
+                        <button class="get-started-btn" aria-label="Sign up for the Free Plan" itemprop="url">Get Started</button>
                     </div>
                 </div>
 
                 <div class="pricing-plans">
-                    <div class="plan">
+                    <div class="plan" aria-labelledby="pro-plan" itemscope itemprop="itemListElement" itemtype="https://schema.org/Offer">
+                        <meta itemprop="name" content="Pro Plan">
+                        <meta itemprop="price" content="79">
+                        <meta itemprop="priceCurrency" content="USD">
+                        <meta itemprop="category" content="Education">
+                        <meta itemprop="availability" content="https://schema.org/InStock">
+
                         <div class="plan-header">
-                            <h2>Pro Plan</h2>
+                            <h2 id="pro-plan" itemprop="name">Pro Plan</h2>
                         </div>
                         <div class="plan-price">
-                            <h3>$79<span>/month</span></h3>
+                            <h3 itemprop="price">$79<span>/month</span></h3>
                         </div>
                         <div class="plan-features">
                             <h4>Available Features</h4>
                             <ul>
-                                <li><span class="icon">✓</span> Access to selected free courses.</li>
-                                <li><span class="icon">✓</span> Limited course materials and resources.</li>
-                                <li><span class="icon">✓</span> Basic community support.</li>
-                                <li><span class="icon">✓</span> No certification upon completion.</li>
-                                <li><span class="icon">✓</span> Ad-supported platform.</li>
-                                <li><span class="icon">✓</span> Access to exclusive Pro Plan community forums.</li>
-                                <li><span class="icon">✓</span> Early access to new courses and updates.</li>
+                                <li itemprop="description"><span class="icon">✓</span> Access to selected free courses.</li>
+                                <li itemprop="description"><span class="icon">✓</span> Limited course materials and resources.</li>
+                                <li itemprop="description"><span class="icon">✓</span> Basic community support.</li>
+                                <li itemprop="description"><span class="icon">✓</span> No certification upon completion.</li>
+                                <li itemprop="description"><span class="icon">✓</span> Ad-supported platform.</li>
+                                <li itemprop="description"><span class="icon">✓</span> Access to exclusive Pro Plan community forums.</li>
+                                <li itemprop="description"><span class="icon">✓</span> Early access to new courses and updates.</li>
                             </ul>
                         </div>
-                        <button class="get-started-btn">Get Started</button>
+                        <button class="get-started-btn" aria-label="Sign up for the Pro Plan" itemprop="url">Get Started</button>
                     </div>
                 </div>
             </div>
-        </section>        
-
+        </section>
+        
         <!-- FAQ Section -->
-        <section class="faq" id="faq">
+        <section class="faq" id="faq" aria-labelledby="faq-heading" itemscope itemtype="https://schema.org/FAQPage">
             <div class="container">
                 <div class="faq-bkrnd">
                     <div class="splitter-text-faq">
-                        <h2>Frequently Asked Questions</h2>
-                        <p>Still you have any questions? Contact our Team via support@skillbridge.com</p>
+                        <h2 id="faq-heading" itemprop="name">Frequently Asked Questions</h2>
+                        <p itemprop="description">Still have any questions? Contact our team via support@skillbridge.com</p>
                         <div class="view-all">
-                            <button class="view-all-btn">See All FAQ's</button>
+                            <button class="view-all-btn" aria-label="See all frequently asked questions">See All FAQ's</button>
                         </div>                   
                     </div>
 
-                    <div class="faq-card">
+                    <div class="faq-card" aria-labelledby="faq-1" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="faq-header">
-                            <h2>Can I enroll in multiple courses at once?</h2>
-                            <button class="faq-select">
+                            <h2 id="faq-1" itemprop="name">Can I enroll in multiple courses at once?</h2>
+                            <button class="faq-select" aria-label="Expand answer for 'Can I enroll in multiple courses at once?'">
                                 <img src="/images/x.svg" alt="Select button icon">
                             </button>
                         </div>
                         <hr>
-                        <p>Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
-                        <button class="faq-action">
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                        </div>
+                        <button class="faq-action" aria-label="Learn more about enrollment process for multiple courses">
                             <p>Enrollment Process for Different Courses</p>
                             <div class="icon-circle">
                                 <img src="/images/arrow.svg" alt="Arrow icon">
@@ -558,37 +579,37 @@
                         </button>                        
                     </div>
 
-                    <div class="faq-card">
+                    <div class="faq-card" aria-labelledby="faq-2" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="faq-header">
-                            <h2>What kind of support can I expect from instructors?</h2>
-                            <button class="faq-select">
+                            <h2 id="faq-2" itemprop="name">What kind of support can I expect from instructors?</h2>
+                            <button class="faq-select" aria-label="Expand answer for 'What kind of support can I expect from instructors?'">
                                 <img src="/images/x.svg" alt="Select button icon">
                             </button>
                         </div>                       
                     </div>
 
-                    <div class="faq-card">
+                    <div class="faq-card" aria-labelledby="faq-3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="faq-header">
-                            <h2>Are the courses self-paced or do they have specific start and end dates?</h2>
-                            <button class="faq-select">
+                            <h2 id="faq-3" itemprop="name">Are the courses self-paced or do they have specific start and end dates?</h2>
+                            <button class="faq-select" aria-label="Expand answer for 'Are the courses self-paced or do they have specific start and end dates?'">
                                 <img src="/images/x.svg" alt="Select button icon">
                             </button>
                         </div>                       
                     </div>
 
-                    <div class="faq-card">
+                    <div class="faq-card" aria-labelledby="faq-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="faq-header">
-                            <h2>Are there any prerequisites for the courses?</h2>
-                            <button class="faq-select">
+                            <h2 id="faq-4" itemprop="name">Are there any prerequisites for the courses?</h2>
+                            <button class="faq-select" aria-label="Expand answer for 'Are there any prerequisites for the courses?'">
                                 <img src="/images/x.svg" alt="Select button icon">
                             </button>
                         </div>                       
                     </div>
 
-                    <div class="faq-card">
+                    <div class="faq-card" aria-labelledby="faq-5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="faq-header">
-                            <h2>Can I download the course materials for offline access?</h2>
-                            <button class="faq-select">
+                            <h2 id="faq-5" itemprop="name">Can I download the course materials for offline access?</h2>
+                            <button class="faq-select" aria-label="Expand answer for 'Can I download the course materials for offline access?'">
                                 <img src="/images/x.svg" alt="Select button icon">
                             </button>
                         </div>                       

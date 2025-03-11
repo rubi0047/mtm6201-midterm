@@ -571,21 +571,23 @@
 
 /* Pricing Section */
 .pricing {
-    background-color: #F7F7F8;
+    background-color: var(--background-dark);
     text-align: center;
     padding: 40px 25px;
 }
 
+/* Pricing Heading */
 .pricing h2 {
     font-size: 24px;
     font-weight: 600;
-    color: #262626;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
+/* Pricing Description */
 .pricing p {
     font-size: 16px;
-    color: #262626;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
@@ -593,17 +595,16 @@
 .pricing-toggle {
     display: flex;
     justify-content: center; /* Centers buttons */
-    background-color: #FFFFFF;
+    background-color: var(--background-light);
     padding: 15px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 100px;
     border-radius: 8px;
     gap: 5px; /* Small space between buttons */
 }
 
 /* Monthly Button */
 .mnth-btn {
-    background-color: #FF9500;
+    background-color: var(--button-primary);
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
@@ -616,11 +617,11 @@
 /* Yearly Button */
 .yr-btn {
     background-color: transparent;
-    color: #262626;
+    color: var(--text-color);
     font-size: 16px;
     font-weight: 500;
     padding: 12px 25px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-md);
     border: none;
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
@@ -628,7 +629,7 @@
 
 /* Hover Effects */
 .mnth-btn:hover {
-    background-color: #FFFFFF;
+    background-color: var(--background-light);
     color: #FF9500;
 }
 
@@ -645,10 +646,10 @@
 }
 
 .plan {
-    background: #FFFFFF;
+    background: var(--background-light);
     border-radius: 12px;
     padding: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Adds a shadow effect to create depth and make the element stand out */
     max-width: 1200px;
     width: 100%;
     text-align: center;
@@ -673,20 +674,20 @@
     font-size: 40px;
     font-weight: 500;
     margin: 35px 0;
-    color: #262626;
+    color: var(--text-color);
 }
 
 .plan-price span {
     font-size: 18px;
-    color: #262626;
+    color: var(--text-color);
 }
 
 /* Features Section */
 .plan-features {
-    background: #F8F8F8;
+    background: var(--background-btn);
     padding: 20px;
     border-radius: 12px 12px 0 0;
-    border: 1px solid #F1F1F3;
+    border: var(--border-light);
     margin: 20px 0;
     margin-bottom: -1px;
 }
@@ -699,20 +700,19 @@
 
 /* Feature List */
 .plan-features ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Removes default bullet points from the list for a cleaner design */
 }
 
 .plan-features li {
     display: flex;
     align-items: center;
-    background: #FFFFFF;
+    background: var(--background-light);
     padding: 12px;
     margin-bottom: 10px;
-    border-radius: 8px;
-    border: 1px solid #EAEAEA;
+    border-radius: var(--border-radius-md);
+    border: var(--border-color);
     font-size: 12px;
-    color: #262626;
+    color: var(--text-color);
 }
 
 /* Checkmark and Cross Icons */
@@ -720,12 +720,12 @@
     display: flex;
     align-items: left;
     justify-content: center;
-    background: #FEF4E8;
-    color: #262626;
+    background: var(--icon-bg);
+    color: var(--text-color);
     font-size: 16px;
     width: 24px;
     height: 24px;
-    border-radius: 6px;
+    border-radius: var(--border-radius-sm);
     margin-right: 10px;
 }
 
@@ -737,20 +737,20 @@
 
 /* Cross Icon */
 .icon.cross {
-    background: #FFFFFF;
-    color: #262626;
-    border: 1px solid #F1F1F3;
+    background: var(--background-light);
+    color: var(--text-color);
+    border: var(--border-light);
 }
 
 /* Hover Effect for ✗ */
 .icon.cross:hover {
-    background: #262626;
-    color: #FFFFFF;
+    background: var(--cross-icon-hover);
+    color: var(--cross-icon-bg);
 }
 
 /* Get Started Button */
 .get-started-btn {
-    width: 100%;
+    width: 100%; /* Ensures the element takes up the full width of its parent container */
     background-color: #FF9500;
     color: #FFFFFF;
     font-size: 18px;
@@ -765,6 +765,18 @@
 .get-started-btn:hover {
     background-color: #E07B00;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FAQ Section */
 .faq {
