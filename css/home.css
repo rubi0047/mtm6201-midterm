@@ -20,7 +20,6 @@
     padding: 14px;
     border-radius: var(--border-radius-md);
     border: var(--border-light);
-    /* border: 1px solid #F1F1F3; */
     position: relative; /* Needed for absolute positioning of lines */
 }
 
@@ -324,7 +323,7 @@
 }
 
 .arrow-btn {
-    background: var(--faq-bg);
+    background: var(--background-btn);
     color: var(--primary-color);
     font-size: 35px;
     padding: 11px 18px;
@@ -335,7 +334,7 @@
 }
 
 .arrow-btn:hover {
-    background-color: var(--faq-hover);
+    background-color: var(--hover);
 }
 
 .benefit-item:nth-child(5), .benefit-item:nth-child(6) {
@@ -381,7 +380,7 @@
 }
 
 .view-all-btn:hover {
-    background-color: var(--faq-hover);
+    background-color: var(--hover);
 }
 
 /* Course Card Styling */
@@ -408,10 +407,10 @@
 /* Option Buttons */
 .option-btns {
     display: flex; /* Enables Flexbox for flexible alignment and layout control */
-    justify-content: center; /* Centers the content horizontally within the container */
+    justify-content: left; /* Centers the content horizontally within the container */
     gap: 10px;
     width: 90%;
-    margin: 15px 0;
+    margin: 15px 0 20px;
 }
 
 .option-btns button {
@@ -424,7 +423,7 @@
 }
 
 .btn-1:hover {
-    background-color: var(--faq-hover);
+    background-color: var(--hover);
 }
 
 /* Course Details */
@@ -477,25 +476,37 @@
 }
 
 .getit-btn:hover {
-    background-color: rgb(225, 224, 224);
+    background-color: var(--hover);
 }
 
 /* Testimonials Section */
 .testimonials {
-    background-color: #F7F7F8;
+    background-color: var(--background-dark);
     text-align: left;
     padding: 40px 25px;
     margin-bottom: -40px;
 }
 
-.testimonials p{
+.testimonials p {
+    margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: var(--background-dark);
+    text-align: left;
+    padding: 40px 25px;
+    margin-bottom: -40px;
+}
+
+.testimonials p {
     margin-bottom: 20px;
 }
 
 /* Testimonial Card */
 .testimonial-crd {
-    background: #FFFFFF;
-    border-radius: 12px;
+    background: var(--background-light);
+    border-radius: var(--border-radius-md);
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     margin-bottom: 30px;
@@ -504,7 +515,7 @@
 /* Testimonial Text */
 .testimonial-crd p {
     font-size: 16px;
-    color: #262626;
+    color: var(--text-color);
     margin-bottom: 30px;
     line-height: 1.5;
 }
@@ -514,7 +525,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #EAEAEA;
+    border-top: var(--border-light);
     padding-top: 15px;
     margin-top: 20px;
 }
@@ -530,32 +541,32 @@
 .profile img {
     width: 60px;
     height: 60px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-md);
 }
 
 /* Name */
 .profile h2 {
     font-size: 18px;
     font-weight: 600;
-    color: #262626;
+    color: var(--text-color);
     margin: 0;
 }
 
 /* Read Full Story Button */
 .readFull-btn {
-    background-color: #F8F8F8;
+    background-color: var(--background-btn);
     font-size: 16px;
     font-weight: 500;
-    color: #262626;
+    color: var(--text-color);
     border: none;
     padding: 18px 15px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-md);
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .readFull-btn:hover {
-    background-color: #EAEAEA;
+    background-color: var(--hover);
 }
 
 /* Pricing Section */

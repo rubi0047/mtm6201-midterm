@@ -21,6 +21,7 @@
     /* Background Colour */
     --background-light: #FFFFFF; /* White sections */
     --background-dark: #F7F7F8; /* Light gray background */
+    --background-btn: #F8F8F8; /* Button Background colour */
     
     /* Borders & Dividers */
     --border-color: 1px solid #EAEAEA; /* Default border colour */
@@ -44,8 +45,7 @@
     --pricing-plan-bg: #FFFFFF; /* White card */
     
     /* Other Elements */
-    --faq-bg: #FFFFFF; /* FAQ Card background */
-    --faq-hover: #EAEAEA; /* Hover effect */
+    --hover: #EAEAEA; /* Hover effect */
 
     /* Border Radius (varied) */
     --border-radius-sm: 6px; /* Small rounded corners */
