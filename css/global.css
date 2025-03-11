@@ -104,6 +104,10 @@ body {
     top: 10px;
 }
 
+.skip-nav {
+    background-color: var(--secondary-color);
+}
+
 /* Promo Banner */
 .rpt-wrapper {
     background-color: var(--background-dark);
