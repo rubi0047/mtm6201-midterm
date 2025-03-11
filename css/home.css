@@ -631,12 +631,14 @@
     border: 1px solid #FFEACC;
 }
 
-.plan-header h3 {
-    font-weight: 500;
+.plan-header h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
 }
 
 /* Plan Price */
-.plan-price h2 {
+.plan-price h3 {
     font-size: 40px;
     font-weight: 500;
     margin: 35px 0;
