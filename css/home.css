@@ -780,7 +780,7 @@
 
 /* FAQ Section */
 .faq {
-    background-color: #F7F7F8;
+    background-color: var(--background-light);
     text-align: center;
     padding: 40px 25px;
 }
