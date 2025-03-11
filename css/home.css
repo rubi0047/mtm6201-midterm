@@ -344,7 +344,7 @@
 
 /* Our Courses */
 .courses {
-    background-color: #F7F7F8;
+    background-color: var(--background-dark);
     text-align: center;
     padding: 40px 25px;
     margin-bottom: -40px;
@@ -353,20 +353,41 @@
 .courses h2 {
     font-size: 24px;
     font-weight: 600;
-    color: #262626;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .courses p {
     font-size: 16px;
-    color: #262626;
+    color: var(--text-color);
     margin-bottom: 20px;
+}
+
+/* View All Button */
+.view-all {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.view-all-btn {
+    background-color: var(--button-secondary);
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 14px 20px;
+    border-radius: var(--border-radius-md);
+    border: var(--border-light);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: var(--faq-hover);
 }
 
 /* Course Card Styling */
 .fundamentals {
-    background-color: #FFFFFF;
-    border-radius: 12px;
+    background-color: var(--background-light);
+    border-radius: var(--border-radius-md);
     padding: 0 0 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -381,29 +402,29 @@
 .crd-img img {
     margin-top: 20px;
     width: 90%;
-    border-radius: 12px;
+    border-radius: var(--border-radius-md);
 }
 
 /* Option Buttons */
 .option-btns {
-    display: flex;
-    justify-content: center; /* Aligns left */
+    display: flex; /* Enables Flexbox for flexible alignment and layout control */
+    justify-content: center; /* Centers the content horizontally within the container */
     gap: 10px;
     width: 90%;
     margin: 15px 0;
 }
 
 .option-btns button {
-    background-color: #FFFFFF;
+    background-color: var(--button-secondary);
     font-size: 16px;
-    color: #262626;
-    border: 1px solid #E0E0E0;
+    color: var(--text-color);
+    border: var(--border-light);
     padding: 6px 14px;
-    border-radius: 6px;
+    border-radius: var(--border-radius-sm);
 }
 
 .btn-1:hover {
-    background-color: #EAEAEA;
+    background-color: var(--faq-hover);
 }
 
 /* Course Details */
@@ -415,7 +436,7 @@
 /* Instructor Name */
 .fundamental-crd h2 {
     font-size: 16px;
-    color: #262626;
+    color: var(--text-color);
     font-weight: 500;
     margin-bottom: 30px;
 }
@@ -424,14 +445,14 @@
 .fundamental-crd h3 {
     font-size: 20px;
     font-weight: bold;
-    color: #262626;
+    color: var(--text-color);
     margin-bottom: 25px;
 }
 
 /* Course Description */
 .fundamental-crd p {
     font-size: 16px;
-    color: #4C4C4D;
+    color: var(--subtext-color);
     line-height: 1.5;
     margin-bottom: 30px;
 }
@@ -444,20 +465,19 @@
 }
 
 .getit-btn {
-    width: 90%; /* Full width */
-    background-color: #F8F8F8;
+    width: 90%;
     font-size: 18px;
     font-weight: bold;
-    color: #262626;
-    border: none;
+    color: var(--text-color);
+    border: var(--border-light);
     padding: 12px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-md);
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease; /* Smoothly transitions the background colour over 0.3 seconds for a better hover effect */
 }
 
 .getit-btn:hover {
-    background-color: #EAEAEA;
+    background-color: rgb(225, 224, 224);
 }
 
 /* Testimonials Section */
