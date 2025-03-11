@@ -1017,14 +1017,15 @@ footer .container {
 .social-links a {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Ensures vertical alignment for a balanced look */
     width: 60px;
     height: 60px;
-    border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-md); /* Rounds the corners for a button-like appearance */
     background: var(--secondary-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease;
 }
+
 
 .social-links a:hover {
     background: var(--hover);
