@@ -323,8 +323,8 @@
 }
 
 .arrow-btn {
-    background: var(--background-btn);
-    color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--text-color);
     font-size: 35px;
     padding: 11px 18px;
     border-radius: var(--border-radius-md);
@@ -334,7 +334,8 @@
 }
 
 .arrow-btn:hover {
-    background-color: var(--hover);
+    background-color: var(--button-primary-hover);
+    color: #FFFFFF;
 }
 
 .benefit-item:nth-child(5), .benefit-item:nth-child(6) {
@@ -605,7 +606,7 @@
 /* Monthly Button */
 .mnth-btn {
     background-color: var(--button-primary);
-    color: #FFFFFF;
+    color: var(--text-color);
     font-size: 16px;
     font-weight: 500;
     padding: 12px 25px;
@@ -752,7 +753,7 @@
 .get-started-btn {
     width: 100%; /* Ensures the element takes up the full width of its parent container */
     background-color: #FF9500;
-    color: #FFFFFF;
+    color: var(--text-color);
     font-size: 18px;
     font-weight: 500;
     padding: 12px;
