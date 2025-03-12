@@ -277,7 +277,7 @@
 /* Benefit Card Styling */
 .benefit-item {
     background: var(--background-light);
-    padding: 40px;
+    padding: 20px;
     border-radius: var(--border-radius-md);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     position: relative;
@@ -928,8 +928,14 @@ hr {
     height: 15px;
 }
 
+
+
+
+/* Media Queries */
+
+/* Tablet View */
 @media (min-width: 768px) {
-    /* Hero Headings */
+    /* Hero Section */
     .hero h1 {
         font-size: 28px;
     }
@@ -945,10 +951,160 @@ hr {
     .partners img {
         padding-right: 40px;
     }
+
+    /* Splitter Text */
+    .splitter-text {
+        display: grid;
+        grid-template-columns: auto max-content; /* Text takes remaining space, button stays fixed */
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "heading heading"
+            "text button"; /* Defines the layout */
+        align-items: center; /* Ensures everything aligns properly */
+        gap: 10px 20px;
+        max-width: 900px; /* Match the benefit-list width for tablet */
+        margin: 0 auto 20px; /* Centers it */
+        padding-left: 0; /* Ensures no extra left padding */
+    }
+    
+    .splitter-text h2 {
+        grid-area: heading; /* Places heading on top */
+        margin-bottom: 10px;
+    }
+    
+    .splitter-text p {
+        grid-area: text; /* Explicitly places paragraph */
+        margin: 0;
+    }
+    
+    .view-all {
+        grid-area: button; /* Explicitly places button */
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .benefit-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(3, 1fr); /* 3 rows */
+        gap: 12px; /* Keeps spacing even */
+        max-width: 900px; /* Keeps within container */
+        margin: 0 auto;
+    }
+    
+    .benefit-item {
+        aspect-ratio: 1 / 1; /* Keep square shape */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        transform: scale(0.95); /* Slightly bigger */
+    }
+    
+    /* Adjust Number Position */
+    .benefit-item h3 {
+        font-size: 45px;
+        top: 20px;
+        right: 20px;
+    }
+    
+    /* Adjust Text Size */
+    .benefit-crd-txt h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .benefit-crd-txt p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    /* Adjust Button */
+    .arrow-btn {
+        font-size: 28px;
+        padding: 10px 14px;
+    }
+    
+    /* Unhide last 2 items */
+    .benefit-item:nth-child(5),.benefit-item:nth-child(6) {
+        display: flex;
+    }
 }
 
-@media (min-width: 1280px) {
+
+
+
+
+
+/* Scaling */
+@media (min-width: 768px) and (max-width: 1000px){
+    .partners li:nth-child(7) {
+        display: none; /* Hides only the 7th logo */
+    }
+
+    .partners li:nth-child(6) {
+        display: none; /* Hides only the 7th logo */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop View */
+@media (min-width: 1440px) {
     .partners img {
         padding-right: 50px;
+    }
+
+    .splitter-text {
+        max-width: 1200px; /* Match the benefit-list width */
+        margin: 0 auto 30px; /* Centers it */
+        padding-left: 0; /* Removes unnecessary left padding */
+    }
+
+    .benefit-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-template-rows: repeat(2, 1fr); /* 2 rows */
+        gap: 10px;
+        width: 85%; /* Reduce width to match text alignment */
+        max-width: 1100px; /* Ensures it stays within the container */
+        margin: 0 auto; /* Centers the grid */
+        justify-content: center; /* Ensures grid is centered */
+    }
+    
+    .benefit-item {
+        width: 100%; /* Ensures each item scales evenly */
+        aspect-ratio: 1 / 1; /* Keeps squares */
+        padding: 20px; /* Slightly smaller padding */
+    }
+    
+    .benefit-item h3 {
+        font-size: 46px; /* Slightly smaller */
+    }
+    
+    .benefit-crd-txt h2 {
+        font-size: 20px; /* Adjust heading size */
+        line-height: 26px;
+    }
+    
+    .benefit-crd-txt p {
+        font-size: 16px; /* Adjust text */
+        line-height: 22px;
+    }
+    
+    .arrow-btn {
+        font-size: 26px; /* Adjust button size */
     }
 }
