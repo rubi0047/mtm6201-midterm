@@ -85,7 +85,7 @@
                                     /images/logo-desktop-dark-162w.png 2x"
                             media="(min-width: 601px)">
                     
-                        <!-- Default image: Ensures a fallback for browsers that do not support <picture> -->
+                        <!-- Default image (Ensures compatibility with older browsers) -->
                         <img src="/images/logo-desktop-dark-81w.png" alt="Company Logo" itemprop="logo">
                     </picture>
                     
@@ -137,13 +137,13 @@
                         <span class="extra-line"></span> <!-- Third Pseudo-Element Line -->
 
                         <picture>
-                            <!-- Small Screens (Mobile & Tablets, max-width 600px) -->
+                            <!-- Mobile: Use smaller images for screens 600px or less -->
                             <source 
                                 srcset="/images/hero_icon-100w.png, 
                                         /images/hero_icon-180w.png 2x"
                                 media="(max-width: 600px)">
                         
-                            <!-- Large Screens (Laptops & Desktops, min-width 601px) -->
+                            <!-- Desktop: Use larger images for screens greater than 600px -->
                             <source 
                                 srcset="/images/hero_icon-220w.png, 
                                         /images/hero_icon-261w.png 2x"
@@ -235,7 +235,28 @@
 
             <!-- Home Photo -->
             <div class="home-photo" itemscope itemtype="https://schema.org/ImageObject">
-                <img src="/images/people_talking.png" alt="People chatting in an office" aria-label="A group of people discussing in an office setting" itemprop="contentUrl">
+                <picture>
+                    <!-- Small screens: Starts with 780px width -->
+                    <source 
+                        srcset="/images/people_talking-780w.png, 
+                                /images/people_talking-1086w.png 2x"
+                        media="(max-width: 600px)">
+                
+                    <!-- Medium screens: Uses 1086px width -->
+                    <source 
+                        srcset="/images/people_talking-1086w.png, 
+                                /images/people_talking-1360w.png 2x"
+                        media="(max-width: 1024px)">
+                
+                    <!-- Large screens: Uses 1360px width -->
+                    <source 
+                        srcset="/images/people_talking-1360w.png, 
+                                /images/people_talking-1628w.png 2x"
+                        media="(min-width: 1025px)">
+                
+                    <!-- Default image (Ensures compatibility with older browsers) -->
+                    <img src="/images/people_talking-780w.png" alt="People chatting in an office" aria-label="A group of people discussing in an office setting" itemprop="contentUrl">
+                </picture>
                 <meta itemprop="description" content="A group of people discussing in an office setting">
             </div>
         </div>
@@ -350,7 +371,27 @@
                     <meta itemprop="position" content="1">
                     <div class="fundamentals" itemscope itemtype="https://schema.org/Course">
                         <div class="crd-img">
-                            <img src="/images/person_writing.png" alt="A person writing on a cork board" itemprop="image">
+                            <picture>
+                                <!-- Small screens: Uses 618px width -->
+                                <source 
+                                    srcset="/images/person_writing-618w.png, 
+                                            /images/person_writing-1099w.png 2x"
+                                    media="(max-width: 600px)">
+                            
+                                <!-- Medium screens: Uses 1099px width -->
+                                <source 
+                                    srcset="/images/person_writing-1099w.png, 
+                                            /images/person_writing-1367w.png 2x"
+                                    media="(max-width: 1024px)">
+                            
+                                <!-- Large screens: Uses 1367px width -->
+                                <source 
+                                    srcset="/images/person_writing-1367w.png"
+                                    media="(min-width: 1025px)">
+                            
+                                <!-- Default image (Ensures compatibility with older browsers) -->
+                                <img src="/images/person_writing-618w.png" alt="A person writing on a cork board" itemprop="image">
+                            </picture>
                         </div>
                         <div class="option-btns">
                             <button class="btn-1" aria-label="Course duration: 4 weeks" itemprop="duration">4 weeks</button>
@@ -374,7 +415,27 @@
                     <div class="fundamentals" itemscope itemtype="https://schema.org/Course">
                         <div class="crd-img">
                             <!-- The <img> tag provides a visual representation of the course, improving engagement. -->
-                            <img src="/images/person_computer.png" alt="A man sitting at his desk looking at his computer." itemprop="image">
+                            <picture>
+                                <!-- Small screens: Uses 618px width -->
+                                <source 
+                                    srcset="/images/person_computer-618w.png, 
+                                            /images/person_computer-1099w.png 2x"
+                                    media="(max-width: 600px)">
+                            
+                                <!-- Medium screens: Uses 1099px width -->
+                                <source 
+                                    srcset="/images/person_computer-1099w.png, 
+                                            /images/person_computer-1367w.png 2x"
+                                    media="(max-width: 1024px)">
+                            
+                                <!-- Large screens: Uses 1367px width -->
+                                <source 
+                                    srcset="/images/person_computer-1367w.png"
+                                    media="(min-width: 1025px)">
+                            
+                                <!-- Default image (Ensures compatibility with older browsers) -->
+                                <img src="/images/person_computer-618w.png" alt="A man sitting at his desk looking at his computer." itemprop="image">
+                            </picture>
                         </div>
                         
                         <div class="option-btns">
@@ -398,7 +459,27 @@
                     <meta itemprop="position" content="3">
                     <div class="fundamentals" itemscope itemtype="https://schema.org/Course">
                         <div class="crd-img">
-                            <img src="/images/book_phone.png" alt="A sketch book sitting on a desk. Someone is also typing on a phone in the foreground." itemprop="image">
+                            <picture>
+                                <!-- Small screens: Uses 618px width -->
+                                <source 
+                                    srcset="/images/book_phone-618w.png, 
+                                            /images/book_phone-1099w.png 2x"
+                                    media="(max-width: 600px)">
+                            
+                                <!-- Medium screens: Uses 1099px width -->
+                                <source 
+                                    srcset="/images/book_phone-1099w.png, 
+                                            /images/book_phone-1367w.png 2x"
+                                    media="(max-width: 1024px)">
+                            
+                                <!-- Large screens: Uses 1367px width -->
+                                <source 
+                                    srcset="/images/book_phone-1367w.png"
+                                    media="(min-width: 1025px)">
+                            
+                                <!-- Default image (Ensures compatibility with older browsers) -->
+                                <img src="/images/book_phone.png" alt="A sketch book sitting on a desk. Someone is also typing on a phone in the foreground." itemprop="image">
+                            </picture>
                         </div>
                         <div class="option-btns">
                             <button class="btn-1" aria-label="Course duration: 8 weeks" itemprop="duration">8 weeks</button>
