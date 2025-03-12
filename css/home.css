@@ -17,10 +17,14 @@
     gap: 16px;
     justify-content: center;
     background-color: var(--background-light);
-    padding: 14px;
+    padding: 14px 20px; /* Ensures consistent padding */
     border-radius: var(--border-radius-md);
     border: var(--border-light);
     position: relative; /* Needed for absolute positioning of lines */
+    max-width: 600px; /* Prevents excessive stretching */
+    margin: 0 auto; /* Centers the block */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    flex-wrap: nowrap; /* Prevents wrapping */
 }
 
 /* Icon Container */
@@ -1044,4 +1048,20 @@ footer .container {
     color: var(--subtext-color);
     text-align: center;
     margin-top: 30px;
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+    /* Hero Headings */
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1280px) {
+    
 }

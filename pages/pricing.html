@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillbridge Home Page</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/pricing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Links Navigation -->
+    <nav class="skip-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        
+        <!-- Improves accessibility by allowing users to jump directly to key sections -->
+        <a href="#main-content" class="skip-link" aria-label="Skip directly to the main content of the page" itemprop="url">
+            <span itemprop="name">Skip to Main Content</span>
+        </a>
+
+        <a href="#benefits" class="skip-link" aria-label="Skip directly to the Benefits section" itemprop="url">
+            <span itemprop="name">Skip to Benefits</span>
+        </a>
+
+        <a href="#courses" class="skip-link" aria-label="Skip directly to the Courses section" itemprop="url">
+            <span itemprop="name">Skip to Courses</span>
+        </a>
+
+        <!-- Helps screen reader users navigate long pages quickly -->
+        <a href="#testimonials" class="skip-link" aria-label="Skip directly to the Testimonials section" itemprop="url">
+            <span itemprop="name">Skip to Testimonials</span>
+        </a>
+
+        <a href="#pricing" class="skip-link" aria-label="Skip directly to the Pricing section" itemprop="url">
+            <span itemprop="name">Skip to Pricing</span>
+        </a>
+
+        <a href="#faq" class="skip-link" aria-label="Skip directly to the FAQ section" itemprop="url">
+            <span itemprop="name">Skip to FAQ</span>
+        </a>  
+
+        <!-- Microdata schema improves SEO by providing structured navigation data -->
+        <a href="#footer" class="skip-link" aria-label="Skip directly to the Footer of the page" itemprop="url">
+            <span itemprop="name">Skip to Footer</span>
+        </a>
+
+    </nav>
+
+    <!-- Promo Banner -->
+    <div class="rpt-wrapper" itemscope itemtype="https://schema.org/SpecialAnnouncement">
+        <div class="promo-container">
+            <div class="promo-banner">
+                
+                <!-- The <span> tag is used here to allow styling and semantic separation of the text inside the link without affecting its functionality -->
+                <a href="#pricing">
+                    <span itemprop="name">Free Courses ✨ Sale Ends Soon, Get It Now ➔</span>
+                </a>
+
+                <meta itemprop="category" content="Education Promotion">
+                <meta itemprop="datePosted" content="2024-03-06">
+            </div>
+        </div>  
+
+        <!-- Header (Navigation) -->
+        <header role="banner" itemscope itemtype="https://schema.org/WebSite">
+            
+            <!-- Defines the canonical URL of the website, helping search engines understand the primary domain -->
+            <meta itemprop="url" content="https://www.yoursite.com">
+
+            <div class="nav-wrapper">
+                <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <picture>
+                        <!-- Mobile: Use smaller images for screens 600px or less -->
+                        <source 
+                            srcset="/images/logo-mobile-dark-60w.png, 
+                                    /images/logo-mobile-dark-120w.png 2x"
+                            media="(max-width: 600px)">
+                    
+                        <!-- Desktop: Use larger images for screens greater than 600px -->
+                        <source 
+                            srcset="/images/logo-desktop-dark-81w.png, 
+                                    /images/logo-desktop-dark-162w.png 2x"
+                            media="(min-width: 601px)">
+                    
+                        <!-- Default image (Ensures compatibility with older browsers) -->
+                        <img src="/images/logo-desktop-dark-81w.png" alt="Skillbridge Logo" itemprop="logo">
+                    </picture>
+                    
+                    <ul class="nav-menu" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <!-- The 'active' class is used to visually highlight the current page in the navigation -->
+                            <a href="./index.html" itemprop="item">
+                                <span itemprop="name">Home</span>
+                            </a>
+                            <meta itemprop="position" content="1">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a class="active" href="./pricing.html" itemprop="item">
+                                <span itemprop="name">Pricing</span>
+                            </a>
+                            <meta itemprop="position" content="2">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="./contact.html" itemprop="item">
+                                <span itemprop="name">Contact</span>
+                            </a>
+                            <meta itemprop="position" content="3">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="#" itemprop="item">
+                                <span itemprop="name">About Us</span>
+                            </a>
+                            <meta itemprop="position" content="4">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="#" itemprop="item">
+                                <span itemprop="name">Courses</span>
+                            </a>
+                            <meta itemprop="position" content="5">
+                        </li>
+                    </ul>
+
+                    <div class="nav-links">
+                        
+                        <!-- Sign-up and login buttons provide quick access to account-related actions -->
+                        <a href="#" class="signup-btn" itemprop="signUpAction">Sign Up</a>
+                        <a href="#" class="login-btn" itemprop="loginAction">Login</a>
+                    </div>
+                </nav>
+            </div>
+            <hr>
+        </header>
+    </div>
