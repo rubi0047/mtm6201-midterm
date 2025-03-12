@@ -243,3 +243,51 @@ hr {
     background: var(--border-color);
     margin: 15px 0;
 }
+
+@media (min-width: 768px) {
+    /* Navigation Wrapper */
+    .nav-wrapper {
+        width: 100%;
+    }
+
+    /* Logo - Moves it to the far left */
+    .nav-wrapper picture {
+        margin-right: 20px;
+    }
+
+    /* Navigation Menu - Aligns items to the left */
+    .nav-menu {
+        display: flex;
+        justify-content: flex-start; /* Aligns items to the left */
+        gap: 20px;
+    }
+
+    /* Unhide the last 2 nav items */
+    .nav-menu li {
+        display: block !important; /* Forces visibility */
+    }
+
+    /* Aligns "Sign Up" and "Login" buttons to the far right */
+    .nav-links {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 1280px) {
+    .nav-wrapper {
+        max-width: 1400px; /* Slightly larger container */
+        padding: 0 20px; /* Adds slight padding for better spacing */
+    }
+
+    .nav-wrapper picture {
+        margin-right: 30px;
+    }
+
+    .nav-menu {
+        gap: 25px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+}
