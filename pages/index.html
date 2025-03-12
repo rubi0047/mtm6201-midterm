@@ -72,9 +72,22 @@
 
             <div class="nav-wrapper">
                 <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <picture>
+                        <!-- Mobile: Use smaller images for screens 600px or less -->
+                        <source 
+                            srcset="/images/logo-mobile-dark-60w.png, 
+                                    /images/logo-mobile-dark-120w.png 2x"
+                            media="(max-width: 600px)">
                     
-                    <!-- The <img> element provides a recognizable brand identity in the navigation bar -->
-                    <img src="/images/logo-mobile-dark.png" alt="Company Logo" itemprop="logo">
+                        <!-- Desktop: Use larger images for screens greater than 600px -->
+                        <source 
+                            srcset="/images/logo-desktop-dark-81w.png, 
+                                    /images/logo-desktop-dark-162w.png 2x"
+                            media="(min-width: 601px)">
+                    
+                        <!-- Default image: Ensures a fallback for browsers that do not support <picture> -->
+                        <img src="/images/logo-mobile-dark-60w.png" alt="Company Logo" itemprop="logo">
+                    </picture>
                     
                     <ul class="nav-menu" itemscope itemtype="https://schema.org/BreadcrumbList">
                         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -624,7 +637,7 @@
         <div class="container">
             <!-- Logo -->
             <div class="footer-logo" itemscope itemtype="https://schema.org/Organization">
-                <img src="/images/logo-mobile-dark.png" alt="Skillbridge Logo" itemprop="logo">
+                <img src="/images/logo-dark.png" alt="Skillbridge Logo" itemprop="logo">
             </div>
     
             <!-- Contact Information -->
