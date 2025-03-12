@@ -86,7 +86,7 @@
                             media="(min-width: 601px)">
                     
                         <!-- Default image: Ensures a fallback for browsers that do not support <picture> -->
-                        <img src="/images/logo-mobile-dark-60w.png" alt="Company Logo" itemprop="logo">
+                        <img src="/images/logo-desktop-dark-81w.png" alt="Company Logo" itemprop="logo">
                     </picture>
                     
                     <ul class="nav-menu" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -135,7 +135,24 @@
                 <div class="unlockPotential">
                     <div class="lines" aria-hidden="true">
                         <span class="extra-line"></span> <!-- Third Pseudo-Element Line -->
-                        <img src="/images/hero_icon.png" alt="Company logo with a small depiction of a lightning bolt." itemprop="image">
+
+                        <picture>
+                            <!-- Small Screens (Mobile & Tablets, max-width 600px) -->
+                            <source 
+                                srcset="/images/hero_icon-100w.png, 
+                                        /images/hero_icon-180w.png 2x"
+                                media="(max-width: 600px)">
+                        
+                            <!-- Large Screens (Laptops & Desktops, min-width 601px) -->
+                            <source 
+                                srcset="/images/hero_icon-220w.png, 
+                                        /images/hero_icon-261w.png 2x"
+                                media="(min-width: 601px)">
+                        
+                            <!-- Default image (Ensures compatibility with older browsers) -->
+                            <img src="/images/hero_icon-220w.png" alt="Company logo with a small depiction of a lightning bolt." itemprop="image">
+                        </picture>
+
                     </div>
                     <h1 id="hero-heading"><strong itemprop="headline">Unlock</strong> Your Creative Potential</h1>
                 </div>
