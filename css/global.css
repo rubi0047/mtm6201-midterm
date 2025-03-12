@@ -200,6 +200,10 @@ nav img {
     background-color: var(--button-primary);
 }
 
+.nav-menu li:nth-last-child(-n+2) {
+    display: none;
+}
+
 /* Align All Links & Buttons to the Right */
 .nav-links {
     display: flex;
