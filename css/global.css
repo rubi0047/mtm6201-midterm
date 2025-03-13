@@ -108,6 +108,16 @@ body {
     background-color: var(--secondary-color);
 }
 
+/* Main Content */
+.main-content {
+    background-color: var(--background-dark);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 /* Promo Banner */
 .rpt-wrapper {
     background-color: var(--background-dark);
@@ -399,6 +409,7 @@ footer .container {
     }
 
     /* Footer Section */
+    
 }
 
 @media (min-width: 1280px) {

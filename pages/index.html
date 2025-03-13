@@ -908,70 +908,74 @@
     <!-- Footer -->
     <footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
         <div class="container">
-            <!-- Logo -->
-            <div class="footer-logo" itemscope itemtype="https://schema.org/Organization">
-                <picture>
-                    <!-- Mobile: Use smaller images for screens 600px or less -->
-                    <source 
-                        srcset="/images/logo-mobile-dark-60w.png, 
-                                /images/logo-mobile-dark-120w.png 2x"
-                        media="(max-width: 600px)">
-                
-                    <!-- Desktop: Use larger images for screens greater than 600px -->
-                    <source 
-                        srcset="/images/logo-desktop-dark-81w.png, 
-                                /images/logo-desktop-dark-162w.png 2x"
-                        media="(min-width: 601px)">
-                
-                    <!-- Default image (Ensures compatibility with older browsers) -->
-                    <img src="/images/logo-desktop-dark-81w.png" alt="Skillbridge Logo" itemprop="logo">
-                </picture>
-            </div>
+            <div class="footer-left">
+                <!-- Logo -->
+                <div class="footer-logo" itemscope itemtype="https://schema.org/Organization">
+                    <picture>
+                        <!-- Mobile: Use smaller images for screens 600px or less -->
+                        <source 
+                            srcset="/images/logo-mobile-dark-60w.png, 
+                                    /images/logo-mobile-dark-120w.png 2x"
+                            media="(max-width: 600px)">
+                    
+                        <!-- Desktop: Use larger images for screens greater than 600px -->
+                        <source 
+                            srcset="/images/logo-desktop-dark-81w.png, 
+                                    /images/logo-desktop-dark-162w.png 2x"
+                            media="(min-width: 601px)">
+                    
+                        <!-- Default image (Ensures compatibility with older browsers) -->
+                        <img src="/images/logo-desktop-dark-81w.png" alt="Skillbridge Logo" itemprop="logo">
+                    </picture>
+                </div>
     
-            <!-- Contact Information -->
-            <div class="footer-contact" aria-label="Contact Information" itemscope itemtype="https://schema.org/ContactPoint">
-                <div class="contact-item">
-                    <img src="/images/email.svg" alt="Email icon">
-                    <p itemprop="email">hello@skillbridge.com</p>
-                </div>
-                <div class="contact-item">
-                    <img src="/images/phone.svg" alt="Phone icon">
-                    <p itemprop="telephone">+91 91813 23 2309</p>
-                </div>
-                <div class="contact-item">
-                    <img src="/images/location.svg" alt="Location icon">
-                    <p itemprop="address">Somewhere in the World</p>
+                <!-- Contact Information -->
+                <div class="footer-contact" aria-label="Contact Information" itemscope itemtype="https://schema.org/ContactPoint">
+                    <div class="contact-item">
+                        <img src="/images/email.svg" alt="Email icon">
+                        <p itemprop="email">hello@skillbridge.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="/images/phone.svg" alt="Phone icon">
+                        <p itemprop="telephone">+91 91813 23 2309</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="/images/location.svg" alt="Location icon">
+                        <p itemprop="address">Somewhere in the World</p>
+                    </div>
                 </div>
             </div>
             
-            <!-- Navigation Links -->
-            <div class="footer-links" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                <div class="footer-column" aria-labelledby="footer-home">
-                    <h2 id="footer-home">Home</h2>
-                    <ul>
-                        <li><a href="#benefits" aria-label="Learn about Benefits" itemprop="url">Benefits</a></li>
-                        <li><a href="#courses" aria-label="Explore our Courses" itemprop="url">Our Courses</a></li>
-                        <li><a href="#testimonials" aria-label="Read our Testimonials" itemprop="url">Our Testimonials</a></li>
-                        <li><a href="#faq" aria-label="Frequently Asked Questions" itemprop="url">Our FAQ</a></li>
-                    </ul>
+            <div class="footer-right">
+                <!-- Navigation Links -->
+                <div class="footer-links" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <div class="footer-column" aria-labelledby="footer-home">
+                        <h2 id="footer-home">Home</h2>
+                        <ul>
+                            <li><a href="#benefits" aria-label="Learn about Benefits" itemprop="url">Benefits</a></li>
+                            <li><a href="#courses" aria-label="Explore our Courses" itemprop="url">Our Courses</a></li>
+                            <li><a href="#testimonials" aria-label="Read our Testimonials" itemprop="url">Our Testimonials</a></li>
+                            <li><a href="#faq" aria-label="Frequently Asked Questions" itemprop="url">Our FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column" aria-labelledby="footer-about">
+                        <h2 id="footer-about">About Us</h2>
+                        <ul>
+                            <li><a href="#" aria-label="Learn about our Company" itemprop="url">Company</a></li>
+                            <li><a href="#" aria-label="View our Achievements" itemprop="url">Achievements</a></li>
+                            <li><a href="#" aria-label="Discover our Goals" itemprop="url">Our Goals</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-column" aria-labelledby="footer-about">
-                    <h2 id="footer-about">About Us</h2>
-                    <ul>
-                        <li><a href="#" aria-label="Learn about our Company" itemprop="url">Company</a></li>
-                        <li><a href="#" aria-label="View our Achievements" itemprop="url">Achievements</a></li>
-                        <li><a href="#" aria-label="Discover our Goals" itemprop="url">Our Goals</a></li>
-                    </ul>
-                </div>
-            </div>
-    
-            <!-- Social Profiles -->
-            <div class="footer-social" aria-labelledby="footer-social-profiles" itemscope itemtype="https://schema.org/Organization">
-                <h2 id="footer-social-profiles">Social Profiles</h2>
-                <div class="social-links">
-                    <a href="#" aria-label="Visit our Facebook page" itemprop="sameAs"><img class="facebook" src="/images/facebook.svg" alt="Facebook logo"></a>
-                    <a href="#" aria-label="Visit our Twitter profile" itemprop="sameAs"><img class="twitter" src="/images/twitter.svg" alt="Twitter logo"></a>
-                    <a href="#" aria-label="Visit our LinkedIn profile" itemprop="sameAs"><img class="linkedin" src="/images/linkedin.svg" alt="LinkedIn logo"></a>
+        
+                <!-- Social Profiles -->
+                <div class="footer-social" aria-labelledby="footer-social-profiles" itemscope itemtype="https://schema.org/Organization">
+                    <h2 id="footer-social-profiles">Social Profiles</h2>
+                    <div class="social-links">
+                        <a href="#" aria-label="Visit our Facebook page" itemprop="sameAs"><img class="facebook" src="/images/facebook.svg" alt="Facebook logo"></a>
+                        <a href="#" aria-label="Visit our Twitter profile" itemprop="sameAs"><img class="twitter" src="/images/twitter.svg" alt="Twitter logo"></a>
+                        <a href="#" aria-label="Visit our LinkedIn profile" itemprop="sameAs"><img class="linkedin" src="/images/linkedin.svg" alt="LinkedIn logo"></a>
+                    </div>
                 </div>
             </div>   
             <!-- Footer Divider & Copyright -->

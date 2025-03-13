@@ -1,0 +1,492 @@
+/* View All Button */
+.view-all {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.view-all-btn {
+    background-color: var(--button-secondary);
+    color: var(--text-color);
+    padding: 14px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    border-radius: var(--border-radius-md);
+    border: var(--border-light);
+    margin-bottom: 30px;
+}
+
+.view-all-btn:hover {
+    background-color: var(--button-secondary-hover);
+}
+
+/* Repeat Text Formatting */
+.splitter-text {
+    text-align: left; /* Aligns text to the left */
+}
+
+.splitter-text h2 {
+    margin-bottom: 20px;
+}
+
+.splitter-text p {
+    line-height: 26px; /* Adjust to desired spacing */
+}
+
+/* Pricing Section */
+.pricing {
+    background-color: var(--background-dark);
+    text-align: center;
+    padding: 40px 25px;
+}
+
+/* Pricing Heading */
+.pricing h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+/* Pricing Description */
+.pricing p {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Pricing Buttons */
+.pricing-toggle {
+    display: flex;
+    justify-content: center; /* Centers buttons */
+    background-color: var(--background-light);
+    padding: 15px;
+    margin: 0 100px;
+    border-radius: 8px;
+    gap: 5px; /* Small space between buttons */
+}
+
+/* Monthly Button */
+.mnth-btn {
+    background-color: var(--button-primary);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Yearly Button */
+.yr-btn {
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-radius: var(--border-radius-md);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effects */
+.mnth-btn:hover {
+    background-color: var(--background-light);
+    color: #FF9500;
+}
+
+.yr-btn:hover {
+    background-color: #FF9500;
+    color: #FFFFFF;
+}
+
+/* Pricing Card Styling */
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.plan {
+    background: var(--background-light);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Adds a shadow effect to create depth and make the element stand out */
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Plan Header */
+.plan-header {
+    background: #FFF9F0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #FFEACC;
+}
+
+.plan-header h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* Plan Price */
+.plan-price h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 35px 0;
+    color: var(--text-color);
+}
+
+.plan-price span {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+/* Features Section */
+.plan-features {
+    background: var(--background-btn);
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+    border: var(--border-light);
+    margin: 20px 0;
+    margin-bottom: -1px;
+}
+
+.plan-features h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Feature List */
+.plan-features ul {
+    list-style: none; /* Removes default bullet points from the list for a cleaner design */
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    background: var(--background-light);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: var(--border-radius-md);
+    border: var(--border-color);
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+/* Checkmark and Cross Icons */
+.icon {
+    display: flex;
+    justify-content: center;
+    background: var(--icon-bg);
+    color: var(--text-color);
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: var(--border-radius-sm);
+    margin-right: 10px;
+}
+
+/* Hover Effect */
+.icon:hover {
+    background: #FF9500;
+    color: #FFFFFF;
+}
+
+/* Cross Icon */
+.icon.cross {
+    background: var(--background-light);
+    color: var(--text-color);
+    border: var(--border-light);
+}
+
+/* Hover Effect for ✗ */
+.icon.cross:hover {
+    background: var(--cross-icon-hover);
+    color: var(--cross-icon-bg);
+}
+
+/* Get Started Button */
+.get-started-btn {
+    width: 100%; /* Ensures the element takes up the full width of its parent container */
+    background-color: #FF9500;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px;
+    border-radius: 0 0 12px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #E07B00;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: var(--background-dark);
+    text-align: center;
+    padding: 40px 25px;
+}
+
+/* FAQ Container */
+.faq-bkrnd {
+    background-color: var(--background-light);
+    padding: 45px 45px 1px 45px;
+    border-radius: var(--border-radius-md);
+}
+
+/* Splitter Text for FAQ */
+.splitter-text-faq {
+    text-align: left;
+}
+
+.splitter-text-faq h2 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.splitter-text-faq p {
+    line-height: 26px;
+}
+
+/* FAQ Heading */
+.faq h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+/* FAQ Description */
+.faq p {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* FAQ Card */
+.faq-card {
+    background: var(--background-light);
+    border: var(--border-light);
+    border-radius: var(--border-radius-md);
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+/* FAQ Header */
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+/* Question Title */
+.faq-header h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    padding: 15px 10px 15px 0;
+}
+
+/* Close Button (X) */
+.faq-select {
+    background: var(--icon-bg);
+    border: none;
+    border-radius: var(--border-radius-md);
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-select:hover {
+    background: #FFD4A3;
+}
+
+/* Answer Text */
+.faq-card p {
+    font-size: 16px;
+    text-align: left;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* FAQ Action Button */
+.faq-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--secondary-color);
+    border: none;
+    width: 100%;
+    padding: 14px;
+    border-radius: var(--border-radius-md);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-action span {
+    font-size: 18px;
+    color: var(--text-color);
+    text-align: left;
+    font-weight: 400;
+    margin: 0; /* Removes extra margin */
+    line-height: 1.5;
+}
+
+.faq-action:hover {
+    background: var(--hover);
+}
+
+/* White Circle Around Arrow */
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-light);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevents shrinking in flexbox */
+}
+
+/* Arrow Icon */
+.icon-circle img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Media Queries */
+/* Tablet View */
+@media (min-width: 800px) {
+    /* Splitter Section */
+    .splitter-text {
+        display: grid;
+        grid-template-columns: auto max-content; /* Text takes remaining space, button stays fixed */
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "heading heading"
+            "text button"; /* Defines the layout */
+        align-items: center;
+        gap: 10px 20px;
+        max-width: 900px;
+        margin: 0 auto 20px; /* Centers it */
+        padding-left: 0; /* Ensures no extra left padding */
+    }
+    
+    .splitter-text h2 {
+        grid-area: heading; /* Places heading on top */
+        margin-bottom: 10px;
+    }
+    
+    .splitter-text p {
+        grid-area: text; /* Explicitly places paragraph */
+        margin: 0;
+    }
+    
+    .view-all {
+        grid-area: button; /* Explicitly places button */
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Pricing Section */
+    .pricing-list {
+        display: flex; 
+        justify-content: center; /* Centers the plans */
+        gap: 20px; /* Adds spacing between the plans */
+    }
+
+    .pricing-plans {
+        width: 50%; /* Ensures equal width */
+        max-width: 445px; /* Prevents them from stretching too wide */
+    }
+
+    /* FAQ Section */
+    .faq-bkrnd {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Equal columns */
+        gap: 40px; /* Space between sections */
+        align-items: start; /* Aligns content to the top */
+        padding: 50px; /* Keeps padding consistent */
+        max-width: 910px;
+        margin: 0 auto;
+    }
+
+    .splitter-text-faq {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centers text vertically */
+    }
+
+    /* Ensures 'View All' button aligns left */
+    .splitter-text-faq .view-all {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .faq-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing-toggle {
+        margin: 0;
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1280px) {
+    /* Splitter Section */
+    .splitter-text {
+        max-width: 1200px; /* Aligns with container */
+        margin: 0 auto 30px; /* Centers and adds spacing */
+        margin-right: 10px;
+        padding-left: 0; /* Resets left padding */
+    }
+
+   /* Keep h2 Left-Aligned */
+    .splitter-text h2 {
+        text-align: left; /* Ensures heading stays left */
+        margin-left: 0;
+        max-width: 100%; /* Prevents restriction */
+    }
+
+    /* Keep p Centered */
+    .splitter-text p {
+        max-width: 1000px; /* Limits text width */
+        margin-left: auto; /* Centers paragraph */
+        margin-right: auto;
+        text-align: left; /* Keeps text readable */
+    }      
+
+    /* Pricing Section */
+    .pricing-plans {
+        max-width: 1200px; /* Prevents them from stretching too wide */
+    }
+
+    /* FAQ Section */
+    .faq-bkrnd {
+        max-width: 1200px;
+    }
+}
