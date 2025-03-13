@@ -483,6 +483,5 @@ footer .container {
         grid-column: 5 / 5;
         grid-row: 1 / 2;
         text-align: right;
-        padding-right: 100px;
     }
 }
