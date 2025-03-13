@@ -1,0 +1,202 @@
+/* View All Button */
+.view-all {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.view-all-btn {
+    background-color: var(--button-secondary);
+    color: var(--text-color);
+    padding: 14px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    border-radius: var(--border-radius-md);
+    border: var(--border-light);
+    margin-bottom: 30px;
+}
+
+.view-all-btn:hover {
+    background-color: var(--button-secondary-hover);
+}
+
+/* Repeat Text Formatting */
+.splitter-text {
+    text-align: left; /* Aligns text to the left */
+}
+
+.splitter-text h2 {
+    margin-bottom: 20px;
+}
+
+.splitter-text p {
+    line-height: 26px; /* Adjust to desired spacing */
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: var(--background-dark);
+    text-align: left;
+    padding: 40px 25px;
+    margin-bottom: -40px;
+}
+
+.testimonials p {
+    margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: var(--background-dark);
+    text-align: left;
+    padding: 40px 25px;
+    margin-bottom: -40px;
+}
+
+.testimonials p {
+    margin-bottom: 20px;
+}
+
+/* Testimonial Card */
+.testimonial-crd {
+    background: var(--background-light);
+    border-radius: var(--border-radius-md);
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+/* Testimonial Text */
+.testimonial-crd p {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Footer Section (Aligns Profile & Button) */
+.testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: var(--border-light);
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Profile Image */
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--border-radius-md);
+}
+
+/* Name */
+.profile h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* Read Full Story Button */
+.readFull-btn {
+    background-color: var(--background-btn);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    border: none;
+    padding: 18px 15px;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.readFull-btn:hover {
+    background-color: var(--hover);
+}
+
+.testimonial-list .testimonial-crd:nth-child(3), .testimonial-list .testimonial-crd:nth-child(4) {
+    display: none;
+  }
+
+/* Contact form section */
+.container {
+    padding-bottom: 45px;
+}
+
+.contact-form-container {
+    background-color: var(--background-light);
+    padding: 30px;
+    border-radius: var(--border-radius-md);
+    max-width: 450px; /* Adjust as needed */
+    margin: 20px auto; /* Center the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    margin-top: -85px;
+    margin-bottom: -13px;
+}
+
+.contact-form-container h2 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.contact-form-container p {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: var(--border-light);
+    border-radius: var(--border-radius-sm);
+    box-sizing: border-box;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px;
+}
+
+.submit-btn {
+    background-color: var(--button-primary);
+    color: var(--text-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--button-primary-hover);
+}
+
+textarea {
+    font-family: "Be Vietnam Pro", sans-serif;
+}

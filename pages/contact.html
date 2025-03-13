@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillbridge Home Page</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Skip Links Navigation -->
+    <nav class="skip-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        
+        <!-- Improves accessibility by allowing users to jump directly to key sections -->
+        <a href="#main-content" class="skip-link" aria-label="Skip directly to the main content of the page" itemprop="url">
+            <span itemprop="name">Skip to Main Content</span>
+        </a>
+
+        <a href="#benefits" class="skip-link" aria-label="Skip directly to the Benefits section" itemprop="url">
+            <span itemprop="name">Skip to Benefits</span>
+        </a>
+
+        <a href="#courses" class="skip-link" aria-label="Skip directly to the Courses section" itemprop="url">
+            <span itemprop="name">Skip to Courses</span>
+        </a>
+
+        <!-- Helps screen reader users navigate long pages quickly -->
+        <a href="#testimonials" class="skip-link" aria-label="Skip directly to the Testimonials section" itemprop="url">
+            <span itemprop="name">Skip to Testimonials</span>
+        </a>
+
+        <a href="#pricing" class="skip-link" aria-label="Skip directly to the Pricing section" itemprop="url">
+            <span itemprop="name">Skip to Pricing</span>
+        </a>
+
+        <a href="#faq" class="skip-link" aria-label="Skip directly to the FAQ section" itemprop="url">
+            <span itemprop="name">Skip to FAQ</span>
+        </a>  
+
+        <!-- Microdata schema improves SEO by providing structured navigation data -->
+        <a href="#footer" class="skip-link" aria-label="Skip directly to the Footer of the page" itemprop="url">
+            <span itemprop="name">Skip to Footer</span>
+        </a>
+
+    </nav>
+
+
+    <!-- Promo Banner -->
+    <div class="rpt-wrapper" itemscope itemtype="https://schema.org/SpecialAnnouncement">
+        <div class="promo-container">
+            <div class="promo-banner">
+                
+                <!-- The <span> tag is used here to allow styling and semantic separation of the text inside the link without affecting its functionality -->
+                <a href="#pricing">
+                    <span itemprop="name">Free Courses ✨ Sale Ends Soon, Get It Now ➔</span>
+                </a>
+
+                <meta itemprop="category" content="Education Promotion">
+                <meta itemprop="datePosted" content="2024-03-06">
+            </div>
+        </div>  
+
+        <!-- Header (Navigation) -->
+        <header role="banner" itemscope itemtype="https://schema.org/WebSite">
+            
+            <!-- Defines the canonical URL of the website, helping search engines understand the primary domain -->
+            <meta itemprop="url" content="https://www.yoursite.com">
+
+            <div class="nav-wrapper">
+                <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <picture>
+                        <!-- Mobile: Use smaller images for screens 600px or less -->
+                        <source 
+                            srcset="/images/logo-mobile-dark-60w.png, 
+                                    /images/logo-mobile-dark-120w.png 2x"
+                            media="(max-width: 600px)">
+                    
+                        <!-- Desktop: Use larger images for screens greater than 600px -->
+                        <source 
+                            srcset="/images/logo-desktop-dark-81w.png, 
+                                    /images/logo-desktop-dark-162w.png 2x"
+                            media="(min-width: 601px)">
+                    
+                        <!-- Default image (Ensures compatibility with older browsers) -->
+                        <img src="/images/logo-desktop-dark-81w.png" alt="Skillbridge Logo" itemprop="logo">
+                    </picture>
+                    
+                    <ul class="nav-menu" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <!-- The 'active' class is used to visually highlight the current page in the navigation -->
+                            <a class="active" href="./index.html" itemprop="item">
+                                <span itemprop="name">Home</span>
+                            </a>
+                            <meta itemprop="position" content="1">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="./pricing.html" itemprop="item">
+                                <span itemprop="name">Pricing</span>
+                            </a>
+                            <meta itemprop="position" content="2">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="./contact.html" itemprop="item">
+                                <span itemprop="name">Contact</span>
+                            </a>
+                            <meta itemprop="position" content="3">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="#" itemprop="item">
+                                <span itemprop="name">About Us</span>
+                            </a>
+                            <meta itemprop="position" content="4">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="#" itemprop="item">
+                                <span itemprop="name">Courses</span>
+                            </a>
+                            <meta itemprop="position" content="5">
+                        </li>
+                    </ul>
+
+                    <div class="nav-links">
+                        
+                        <!-- Sign-up and login buttons provide quick access to account-related actions -->
+                        <a href="#" class="signup-btn" itemprop="signUpAction">Sign Up</a>
+                        <a href="#" class="login-btn" itemprop="loginAction">Login</a>
+                    </div>
+                </nav>
+            </div>
+            <hr>
+        </header>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content" role="main" itemscope itemtype="https://schema.org/WebPage">
+
+        <!-- Testimonials -->
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading" itemscope itemtype="https://schema.org/Review">
+            <div class="container">
+                <div class="splitter-text">
+                    <h2 id="testimonials-heading" itemprop="name">Contact Us Today</h2>
+                    <p itemprop="description">IF you're still on the fence, read some testimonials from our satisfied students who have transformed their skills with our courses! If you have any questions, please, fill out the contact form below to get in touch.</p>
+                    <div class="view-all">
+                        <button class="view-all-btn" aria-label="View all testimonials">View All</button>
+                    </div>
+                </div>
+
+                <div class="testimonial-list">
+                    <div class="testimonial-crd" aria-labelledby="testimonial-1" itemscope itemprop="review" itemtype="https://schema.org/Review">
+                        <p id="testimonial-1" itemprop="reviewBody">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                        <!-- Profile & Button Section -->
+                        <div class="testimonial-footer">
+                            <div class="profile" itemscope itemprop="author" itemtype="https://schema.org/Person">
+                                <picture>
+                                    <!-- Small & Medium screens: Uses 100px width -->
+                                    <source 
+                                        srcset="/images/sarah-100w.png, 
+                                                /images/sarah-120w.png 2x"
+                                        media="(max-width: 1024px)">
+                                
+                                    <!-- Large screens: Uses 120px width -->
+                                    <source 
+                                        srcset="/images/sarah-120w.png"
+                                        media="(min-width: 1025px)">
+                                
+                                    <!-- Default image (Ensures compatibility with older browsers) -->
+                                    <img src="/images/sarah-100w.png" alt="Sarah posing for a headshot" itemprop="image">
+                                </picture>
+                                <h2 itemprop="name">Sarah L</h2>
+                            </div>
+                            <button class="readFull-btn" aria-label="Read full testimonial from Sarah L">Read Full Story</button>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-crd" aria-labelledby="testimonial-2" itemscope itemprop="review" itemtype="https://schema.org/Review">
+                        <p id="testimonial-2" itemprop="reviewBody">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+                        <div class="testimonial-footer">
+                            <div class="profile" itemscope itemprop="author" itemtype="https://schema.org/Person">
+                                <picture>
+                                    <!-- Small & Medium screens: Uses 100px width -->
+                                    <source 
+                                        srcset="/images/jason-100w.png,
+                                                /images/jason-120w.png 2x"
+                                        media="(max-width: 1024px)">
+                                
+                                    <!-- Large screens: Uses 120px width -->
+                                    <source 
+                                        srcset="/images/jason-120w.png"
+                                        media="(min-width: 1025px)">
+                                
+                                    <!-- Default image (Ensures compatibility with older browsers) -->
+                                    <img src="/images/jason-100w.png" alt="Jason posing for a headshot" itemprop="image">
+                                </picture>
+                                <h2 itemprop="name">Jason M</h2>
+                            </div>
+                            <button class="readFull-btn" aria-label="Read full testimonial from Jason M">Read Full Story</button>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-crd" aria-labelledby="testimonial-3" itemscope itemprop="review" itemtype="https://schema.org/Review">
+                        <!-- Wrapping the entire testimonial in a div allows for better styling, layout control, and accessibility grouping. -->
+                        <p id="testimonial-3" itemprop="reviewBody">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+                        <div class="testimonial-footer">
+                            <div class="profile" itemscope itemprop="author" itemtype="https://schema.org/Person">
+                                <picture>
+                                    <!-- Small & Medium screens: Uses 100px width -->
+                                    <source 
+                                        srcset="/images/emily-100w.png,
+                                                /images/emily-120w.png 2x"
+                                        media="(max-width: 1024px)">
+                                
+                                    <!-- Large screens: Uses 120px width -->
+                                    <source 
+                                        srcset="/images/emily-120w.png"
+                                        media="(min-width: 1025px)">
+                                
+                                    <!-- Default image (Ensures compatibility with older browsers) -->
+                                    <img src="/images/emily-100w.png" alt="Emily posing for a headshot" itemprop="image">
+                                </picture>
+                                <!-- Using an <h2> for the reviewer's name ensures a clear hierarchy and improves scannability for users. -->
+                                <h2 itemprop="name">Emily R</h2>
+                            </div>
+                            <button class="readFull-btn" aria-label="Read full testimonial from Emily R">Read Full Story</button>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-crd" aria-labelledby="testimonial-4" itemscope itemprop="review" itemtype="https://schema.org/Review">
+                        <p id="testimonial-4" itemprop="reviewBody">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                        <div class="testimonial-footer">
+                            <div class="profile" itemscope itemprop="author" itemtype="https://schema.org/Person">
+                                <picture>
+                                    <!-- Small & Medium screens: Uses 100px width -->
+                                    <source 
+                                        srcset="/images/michael-100w.png,
+                                                /images/michael-120w.png 2x"
+                                        media="(max-width: 1024px)">
+                                
+                                    <!-- Large screens: Uses 120px width -->
+                                    <source 
+                                        srcset="/images/michael-120w.png"
+                                        media="(min-width: 1025px)">
+                                
+                                    <!-- Default image (Ensures compatibility with older browsers) -->
+                                    <img src="/images/michael-100w.png" alt="Michael posing for a headshot" itemprop="image">
+                                </picture>
+                                <h2 itemprop="name">Michael K</h2>
+                            </div>
+                            <button class="readFull-btn" aria-label="Read full testimonial from Michael K">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <div class="container">
+            <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <p>Please fill out the form below to get in touch.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your Name">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your Message"></textarea>
+                    </div>
+            
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="container">
+            <div class="footer-grid-container">
+                <div class="footer-left">
+                    <!-- Logo -->
+                    <div class="footer-logo" itemscope itemtype="https://schema.org/Organization">
+                        <picture>
+                            <!-- Mobile: Use smaller images for screens 600px or less -->
+                            <source 
+                                srcset="/images/logo-mobile-dark-60w.png, 
+                                        /images/logo-mobile-dark-120w.png 2x"
+                                media="(max-width: 600px)">
+                        
+                            <!-- Desktop: Use larger images for screens greater than 600px -->
+                            <source 
+                                srcset="/images/logo-desktop-dark-81w.png, 
+                                        /images/logo-desktop-dark-162w.png 2x"
+                                media="(min-width: 601px)">
+                        
+                            <!-- Default image (Ensures compatibility with older browsers) -->
+                            <img src="/images/logo-desktop-dark-81w.png" alt="Skillbridge Logo" itemprop="logo">
+                        </picture>
+                    </div>
+        
+                    <!-- Contact Information -->
+                    <div class="footer-contact" aria-label="Contact Information" itemscope itemtype="https://schema.org/ContactPoint">
+                        <div class="contact-item">
+                            <img src="/images/email.svg" alt="Email icon">
+                            <p itemprop="email">hello@skillbridge.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <img src="/images/phone.svg" alt="Phone icon">
+                            <p itemprop="telephone">+91 91813 23 2309</p>
+                        </div>
+                        <div class="contact-item">
+                            <img src="/images/location.svg" alt="Location icon">
+                            <p itemprop="address">Somewhere in the World</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="footer-links" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <div class="footer-column" aria-labelledby="footer-home">
+                        <h2 id="footer-home">Home</h2>
+                        <ul>
+                            <li><a href="#" aria-label="Learn about Benefits" itemprop="url">Benefits</a></li>
+                            <li><a href="#" aria-label="Explore our Courses" itemprop="url">Our Courses</a></li>
+                            <li><a href="#testimonials" aria-label="Read our Testimonials" itemprop="url">Our Testimonials</a></li>
+                            <li><a href="#" aria-label="Frequently Asked Questions" itemprop="url">Our FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column" aria-labelledby="footer-about">
+                        <h2 id="footer-about">About Us</h2>
+                        <ul>
+                            <li><a href="#" aria-label="Learn about our Company" itemprop="url">Company</a></li>
+                            <li><a href="#" aria-label="View our Achievements" itemprop="url">Achievements</a></li>
+                            <li><a href="#" aria-label="Discover our Goals" itemprop="url">Our Goals</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Social Profiles -->
+                <div class="footer-social" aria-labelledby="footer-social-profiles" itemscope itemtype="https://schema.org/Organization">
+                    <h2 id="footer-social-profiles">Social Profiles</h2>
+                    <div class="social-links">
+                        <a href="#" aria-label="Visit our Facebook page" itemprop="sameAs"><img class="facebook" src="/images/facebook.svg" alt="Facebook logo"></a>
+                        <a href="#" aria-label="Visit our Twitter profile" itemprop="sameAs"><img class="twitter" src="/images/twitter.svg" alt="Twitter logo"></a>
+                        <a href="#" aria-label="Visit our LinkedIn profile" itemprop="sameAs"><img class="linkedin" src="/images/linkedin.svg" alt="LinkedIn logo"></a>
+                    </div>
+                </div>
+            </div> 
+            <!-- Footer Divider & Copyright -->
+            <hr>
+            <p class="copyright" itemprop="copyrightHolder">&copy; 2025 Skillbridge. All rights reserved.</p>
+        </div>  
+    </footer>
+    
+</body>
+</html>

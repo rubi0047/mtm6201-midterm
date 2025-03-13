@@ -187,7 +187,6 @@
 }
 
 /* Large Homepage Photo */
-/* Ensure home-photo matches the width of partners */
 .home-photo {
     width: 100%;
     max-width: 1200px; /* Ensures it aligns with the partners section */
