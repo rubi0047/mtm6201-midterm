@@ -3,6 +3,11 @@
     background-color: var(--background-dark);
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -264,6 +269,12 @@
 
 .splitter-text p {
     line-height: 26px; /* Adjust to desired spacing */
+}
+
+.splitter-text, .benefit-list {
+    max-width: 1200px; /* Matches .container */
+    margin: 0 auto; /* Centers inside .container */
+    width: 100%; /* Ensures full width */
 }
 
 /* Benefit Section */
@@ -1068,43 +1079,68 @@ hr {
     }
 
     .splitter-text {
-        max-width: 1200px; /* Match the benefit-list width */
-        margin: 0 auto 30px; /* Centers it */
-        padding-left: 0; /* Removes unnecessary left padding */
+        max-width: 1200px; /* Aligns with container */
+        margin: 0 auto 30px; /* Centers and adds spacing */
+        margin-right: 10px;
+        padding-left: 0; /* Resets left padding */
     }
 
+   /* Keep h2 Left-Aligned */
+    .splitter-text h2 {
+        text-align: left; /* Ensures heading stays left */
+        margin-left: 0; /* Resets any centering */
+        max-width: 100%; /* Prevents restriction */
+    }
+
+    /* Keep p Centered */
+    .splitter-text p {
+        max-width: 1000px; /* Limits text width */
+        margin-left: auto; /* Centers paragraph */
+        margin-right: auto;
+        text-align: left; /* Keeps text readable */
+    }      
+    
+   /* Benefit List (Grid Layout) */
     .benefit-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* 3 columns */
         grid-template-rows: repeat(2, 1fr); /* 2 rows */
-        gap: 10px;
-        width: 85%; /* Reduce width to match text alignment */
-        max-width: 1100px; /* Ensures it stays within the container */
+        justify-content: center;
+        gap: 8px; /* Decrease gap slightly */
+        width: 95%; /* Reduce width slightly to fit */
+        max-width: 1100px; /* Slightly smaller max-width */
         margin: 0 auto; /* Centers the grid */
-        justify-content: center; /* Ensures grid is centered */
+        padding: 0 10px;
     }
-    
+
+    /* Benefit Card */
     .benefit-item {
-        width: 100%; /* Ensures each item scales evenly */
-        aspect-ratio: 1 / 1; /* Keeps squares */
-        padding: 20px; /* Slightly smaller padding */
+        width: 100%; /* Ensures even scaling */
+        aspect-ratio: 1 / 1; /* Keeps a square shape */
+        padding: 18px; /* Slightly smaller padding */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    
+
+    /* Number Styling */
     .benefit-item h3 {
-        font-size: 46px; /* Slightly smaller */
+        font-size: 42px; /* Slightly smaller */
     }
-    
+
+    /* Text Container */
     .benefit-crd-txt h2 {
-        font-size: 20px; /* Adjust heading size */
-        line-height: 26px;
+        font-size: 18px; /* Adjusted for balance */
+        line-height: 24px;
     }
-    
+
     .benefit-crd-txt p {
-        font-size: 16px; /* Adjust text */
-        line-height: 22px;
+        font-size: 15px; /* Slightly smaller text */
+        line-height: 21px;
     }
-    
+
+    /* Button Adjustments */
     .arrow-btn {
-        font-size: 26px; /* Adjust button size */
+        font-size: 24px; /* Slightly smaller button */
     }
 }
