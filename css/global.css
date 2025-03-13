@@ -239,8 +239,9 @@ nav img {
 
 /* Horizontal Divider */
 hr {
+    border: none;
     height: 1px;
-    background: var(--border-color);
+    background: #EAEAEA;
     margin: 15px 0;
 }
 
@@ -352,7 +353,6 @@ footer .container {
     transition: background 0.3s ease;
 }
 
-
 .social-links a:hover {
     background: var(--hover);
 }
@@ -371,7 +371,7 @@ footer .container {
     margin-top: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     /* Navigation Wrapper */
     .nav-wrapper {
         width: 100%;
@@ -397,6 +397,58 @@ footer .container {
     /* Aligns "Sign Up" and "Login" buttons to the far right */
     .nav-links {
         margin-left: auto;
+    }
+
+    /* Footer Section */
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 40px;
+        position: relative; /* Ensures consistent placement */
+    }
+
+    /* Stack Logo on Top of Contact Info */
+    .footer-logo {
+        flex-basis: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .footer-contact {
+        flex: 1;
+    }
+
+    /* Footer Links */
+    .footer-links {
+        display: flex;
+        flex: 2;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        flex: 1;
+    }
+
+    /* Social Profiles Section */
+    .footer-social {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Align Social Icons Left */
+    .social-links {
+        justify-content: flex-start;
+    }
+
+    /* Ensure Copyright is Full Width */
+    .copyright {
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 20px;
     }
 }
 

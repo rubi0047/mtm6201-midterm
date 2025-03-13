@@ -873,14 +873,6 @@
     background: #FFD4A3;
 }
 
-/* Horizontal Divider */
-hr {
-    border: none;
-    height: 1px;
-    background: #EAEAEA;
-    margin: 15px 0;
-}
-
 /* Answer Text */
 .faq-card p {
     font-size: 16px;
@@ -1073,7 +1065,46 @@ hr {
         margin-bottom: 0; /* Removes extra spacing */
     }
 
+    /* Pricing Section */
+    .pricing-list {
+        display: flex; 
+        justify-content: center; /* Centers the plans */
+        gap: 20px; /* Adds spacing between the plans */
+    }
 
+    .pricing-plans {
+        width: 50%; /* Ensures equal width */
+        max-width: 445px; /* Prevents them from stretching too wide */
+    }
+
+    /* FAQ Section */
+    .faq-bkrnd {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Equal columns */
+        gap: 40px; /* Space between sections */
+        align-items: start; /* Aligns content to the top */
+        padding: 50px; /* Keeps padding consistent */
+        max-width: 910px;
+        margin: 0 auto;
+    }
+
+    .splitter-text-faq {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centers text vertically */
+    }
+
+    /* Ensures 'View All' button aligns left */
+    .splitter-text-faq .view-all {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .faq-list {
+        display: flex;
+        flex-direction: column;
+    }
 
 
 
@@ -1188,5 +1219,15 @@ hr {
     /* Testimonials Section */
     .testimonial-list {
         max-width: 1200px; /* Expands to match the container */
+    }
+
+    /* Pricing Section */
+    .pricing-plans {
+        max-width: 1200px; /* Prevents them from stretching too wide */
+    }
+
+    /* FAQ Section */
+    .faq-bkrnd {
+        max-width: 1200px;
     }
 }
