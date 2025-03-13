@@ -963,9 +963,6 @@ hr {
         padding-right: 20px;
     }
 
-
-
-
     /* Splitter Section */
     .splitter-text {
         display: grid;
@@ -997,10 +994,6 @@ hr {
         justify-content: flex-end;
     }
 
-    
-    
-    
-    
     /* Benefits Section */
     .benefit-list {
         display: grid;
@@ -1048,6 +1041,21 @@ hr {
     /* Unhide last 2 items */
     .benefit-item:nth-child(5),.benefit-item:nth-child(6) {
         display: flex;
+    }
+
+    /* Courses Section */
+    .course-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(3, auto); /* 3 rows */
+        gap: 20px; /* Adjust spacing */
+        justify-content: center; /* Center grid */
+        max-width: 900px; /* Keeps it within container */
+        margin: 0 auto; /* Centers the grid */
+    }
+
+    .fundamentals {
+        width: 100%; /* Make sure the cards fill the grid columns */
     }
 }
 
@@ -1141,5 +1149,16 @@ hr {
     /* Button Adjustments */
     .arrow-btn {
         font-size: 24px; /* Slightly smaller button */
+    }
+
+    /* Course Section */
+    .course-list {
+        max-width: 1200px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .pricing-toggle {
+        margin: 0;
     }
 }
