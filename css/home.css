@@ -945,7 +945,7 @@ hr {
 /* Media Queries */
 
 /* Tablet View */
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     /* Hero Section */
     .hero h1 {
         font-size: 28px;
@@ -960,10 +960,13 @@ hr {
     }
 
     .partners img {
-        padding-right: 40px;
+        padding-right: 20px;
     }
 
-    /* Splitter Text */
+
+
+
+    /* Splitter Section */
     .splitter-text {
         display: grid;
         grid-template-columns: auto max-content; /* Text takes remaining space, button stays fixed */
@@ -991,9 +994,14 @@ hr {
     .view-all {
         grid-area: button; /* Explicitly places button */
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
     }
 
+    
+    
+    
+    
+    /* Benefits Section */
     .benefit-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 columns */
@@ -1063,21 +1071,12 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Desktop View */
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
     .partners img {
         padding-right: 50px;
     }
-
+    /* Splitter Section */
     .splitter-text {
         max-width: 1200px; /* Aligns with container */
         margin: 0 auto 30px; /* Centers and adds spacing */
@@ -1100,15 +1099,15 @@ hr {
         text-align: left; /* Keeps text readable */
     }      
     
+    /* Benefits Section */
    /* Benefit List (Grid Layout) */
     .benefit-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* 3 columns */
         grid-template-rows: repeat(2, 1fr); /* 2 rows */
         justify-content: center;
-        gap: 8px; /* Decrease gap slightly */
-        width: 95%; /* Reduce width slightly to fit */
-        max-width: 1100px; /* Slightly smaller max-width */
+        gap: 7px; /* Decrease gap slightly */
+        max-width: 1100px;
         margin: 0 auto; /* Centers the grid */
         padding: 0 10px;
     }
