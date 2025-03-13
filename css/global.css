@@ -337,7 +337,6 @@ footer .container {
 .social-links {
     display: flex;
     gap: 15px;
-    justify-content: flex-start;
     margin: 25px 0 -15px;
 }
 
@@ -400,56 +399,6 @@ footer .container {
     }
 
     /* Footer Section */
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 40px;
-        position: relative; /* Ensures consistent placement */
-    }
-
-    /* Stack Logo on Top of Contact Info */
-    .footer-logo {
-        flex-basis: 100%;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    .footer-contact {
-        flex: 1;
-    }
-
-    /* Footer Links */
-    .footer-links {
-        display: flex;
-        flex: 2;
-        justify-content: space-between;
-    }
-
-    .footer-column {
-        flex: 1;
-    }
-
-    /* Social Profiles Section */
-    .footer-social {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    /* Align Social Icons Left */
-    .social-links {
-        justify-content: flex-start;
-    }
-
-    /* Ensure Copyright is Full Width */
-    .copyright {
-        flex-basis: 100%;
-        text-align: center;
-        margin-top: 20px;
-    }
 }
 
 @media (min-width: 1280px) {
