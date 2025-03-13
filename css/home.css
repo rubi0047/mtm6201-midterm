@@ -971,9 +971,9 @@ hr {
         grid-template-areas: 
             "heading heading"
             "text button"; /* Defines the layout */
-        align-items: center; /* Ensures everything aligns properly */
+        align-items: center;
         gap: 10px 20px;
-        max-width: 900px; /* Match the benefit-list width for tablet */
+        max-width: 900px;
         margin: 0 auto 20px; /* Centers it */
         padding-left: 0; /* Ensures no extra left padding */
     }
@@ -1049,13 +1049,13 @@ hr {
         grid-template-columns: repeat(2, 1fr); /* 2 columns */
         grid-template-rows: repeat(3, auto); /* 3 rows */
         gap: 20px; /* Adjust spacing */
-        justify-content: center; /* Center grid */
+        justify-content: center;
         max-width: 900px; /* Keeps it within container */
         margin: 0 auto; /* Centers the grid */
     }
 
     .fundamentals {
-        width: 100%; /* Make sure the cards fill the grid columns */
+        width: 100%;
     }
 }
 
@@ -1071,7 +1071,7 @@ hr {
     }
 
     .partners li:nth-child(6) {
-        display: none; /* Hides only the 7th logo */
+        display: none;
     }
 }
 
@@ -1095,7 +1095,7 @@ hr {
    /* Keep h2 Left-Aligned */
     .splitter-text h2 {
         text-align: left; /* Ensures heading stays left */
-        margin-left: 0; /* Resets any centering */
+        margin-left: 0;
         max-width: 100%; /* Prevents restriction */
     }
 
