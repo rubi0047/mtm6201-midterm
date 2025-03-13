@@ -377,7 +377,7 @@ footer .container {
     font-size: 18px;
     color: var(--subtext-color);
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 @media (min-width: 800px) {
@@ -409,7 +409,35 @@ footer .container {
     }
 
     /* Footer Section */
-    
+    .footer-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto; /* One row, auto height */
+        gap: 10px; /* Space between grid items */
+        margin: 0 auto;
+        max-width: 840px;
+    }
+
+    .footer-left {
+        grid-column: 1 / 2;
+        grid-row: 1 / 5;
+    }
+
+    .footer-links {
+        grid-column: 3 / 4; /* Use 3/4 to keep the home and about in an even center on the tablet view */
+        grid-row: 1 / 2;
+        gap: 35px;
+    }
+
+    .footer-social {
+        grid-column: 5 / 5;
+        grid-row: 1 / 2;
+        text-align: right;
+    }
+
+    .footer-social h2 {
+        text-align: left; /* Aligns text to icons */
+    }
 }
 
 @media (min-width: 1280px) {
@@ -428,5 +456,33 @@ footer .container {
 
     .nav-links {
         gap: 20px;
+    }
+
+    /* Footer Section */
+    .footer-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr; /* One row, auto height */
+        column-gap: 80px;
+        margin: 0 auto;
+        max-width: 1100px;
+    }
+
+    .footer-left {
+        grid-column: 1 / 2;
+        grid-row: 1 / 5; 
+    }
+
+    .footer-links {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        gap: 80px;
+    }
+
+    .footer-social {
+        grid-column: 5 / 5;
+        grid-row: 1 / 2;
+        text-align: right;
+        padding-right: 100px;
     }
 }

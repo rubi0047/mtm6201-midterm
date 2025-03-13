@@ -921,11 +921,7 @@
     height: 15px;
 }
 
-
-
-
 /* Media Queries */
-
 /* Tablet View */
 @media (min-width: 800px) {
     /* Hero Section */
@@ -1096,21 +1092,10 @@
         flex-direction: column;
     }
 
-
-
-
-
-
-
     .pricing-toggle {
         margin: 0;
     }
 }
-
-
-
-
-
 
 /* Scaling */
 @media (min-width: 768px) and (max-width: 1000px){
@@ -1122,10 +1107,6 @@
         display: none;
     }
 }
-
-
-
-
 
 /* Desktop View */
 @media (min-width: 1280px) {
