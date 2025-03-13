@@ -1057,6 +1057,33 @@ hr {
     .fundamentals {
         width: 100%;
     }
+
+    /* Testimonials Section */
+    .testimonial-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(2, auto); /* 2 rows */
+        gap: 20px; /* Adds spacing between grid items */
+        max-width: 900px; /* Keeps within container */
+        margin: 0 auto; /* Centers the grid */
+    }
+
+    .testimonial-crd {
+        width: 100%; /* Ensures each testimonial takes full grid space */
+        margin-bottom: 0; /* Removes extra spacing */
+    }
+
+
+
+
+
+
+
+
+
+    .pricing-toggle {
+        margin: 0;
+    }
 }
 
 
@@ -1158,7 +1185,8 @@ hr {
         gap: 30px;
     }
 
-    .pricing-toggle {
-        margin: 0;
+    /* Testimonials Section */
+    .testimonial-list {
+        max-width: 1200px; /* Expands to match the container */
     }
 }
