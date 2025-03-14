@@ -12,7 +12,7 @@
     gap: 16px;
     justify-content: center;
     background-color: var(--background-light);
-    padding: 14px 20px; /* Ensures consistent padding */
+    padding: 14px 20px;
     border-radius: var(--border-radius-md);
     border: var(--border-light);
     position: relative; /* Needed for absolute positioning of lines */
