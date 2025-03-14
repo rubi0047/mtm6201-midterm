@@ -32,7 +32,6 @@
 
     </nav>
 
-
     <!-- Promo Banner -->
     <h1 class="hidden-heading">Contact Page - Skillbridge</h1>
     <div class="rpt-wrapper" itemscope itemtype="https://schema.org/SpecialAnnouncement">
@@ -122,7 +121,6 @@
 
     <!-- Main Content -->
     <main class="main-content" id="main-content" role="main" itemscope itemtype="https://schema.org/WebPage">
-
         <!-- Testimonials -->
         <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading" itemscope itemtype="https://schema.org/Review">
             <div class="container">
@@ -241,30 +239,32 @@
             </div>
         </section>
 
-        <div class="container">
-            <div class="contact-form-container" itemscope itemtype="https://schema.org/ContactPage">
-                <h2 id="contact-form-heading" itemprop="name">Contact Us</h2>
-                <p itemprop="description">Please fill out the form below to get in touch.</p>
-                <form class="contact-form" aria-labelledby="contact-form-heading" itemscope itemtype="https://schema.org/ContactPoint">
-                    <div class="form-group">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="Enter your Name" aria-required="true" aria-label="Full Name" itemprop="name">
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your Email" aria-required="true" aria-label="Email" itemprop="email">
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Enter your Message" aria-required="true" aria-label="Message" itemprop="description"></textarea>
-                    </div>
-        
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+        <section aria-label="Contact Form Section" itemscope itemtype="https://schema.org/WebPageElement" itemprop="mainContentOfPage">
+            <div class="container">
+                <div class="contact-form-container" itemscope itemtype="https://schema.org/ContactPage">
+                    <h2 id="contact-form-heading" itemprop="name">Contact Us</h2>
+                    <p itemprop="description">Please fill out the form below to get in touch.</p>
+                    <form class="contact-form" aria-labelledby="contact-form-heading" itemscope itemtype="https://schema.org/ContactPoint">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your Name" aria-required="true" aria-label="Full Name" itemprop="name">
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your Email" aria-required="true" aria-label="Email" itemprop="email">
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Enter your Message" aria-required="true" aria-label="Message" itemprop="description"></textarea>
+                        </div>
+            
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->

@@ -204,3 +204,7 @@
 textarea {
     font-family: "Be Vietnam Pro", sans-serif;
 }
+
+@media (min-width: 800px) {
+    
+}
