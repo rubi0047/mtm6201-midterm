@@ -141,9 +141,9 @@
     background-color: var(--background-light);
     padding: 30px;
     border-radius: var(--border-radius-md);
-    max-width: 450px; /* Adjust as needed */
+    max-width: 450px;
     margin: 20px auto; /* Center the form */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: -85px;
     margin-bottom: -13px;
 }
@@ -168,8 +168,7 @@
     color: var(--text-color);
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
     border: var(--border-light);
@@ -205,6 +204,97 @@ textarea {
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
+/* Media Queries */
+/* Tablet View */
 @media (min-width: 800px) {
+    /* Splitter Section */
+    .splitter-text {
+        display: grid;
+        grid-template-columns: auto max-content; /* Text takes remaining space, button stays fixed */
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "heading heading"
+            "text button"; /* Defines the layout */
+        align-items: center;
+        gap: 10px 20px;
+        max-width: 900px;
+        margin: 0 auto 20px; /* Centers it */
+        padding-left: 0; /* Ensures no extra left padding */
+    }
     
+    .splitter-text h2 {
+        grid-area: heading; /* Places heading on top */
+        margin-bottom: 10px;
+    }
+    
+    .splitter-text p {
+        grid-area: text; /* Explicitly places paragraph */
+        margin: 0;
+    }
+    
+    .view-all {
+        grid-area: button; /* Explicitly places button */
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Testimonials Section */
+    .testimonial-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(2, auto); /* 2 rows */
+        gap: 20px;
+        max-width: 900px; /* Keeps within container */
+        margin: 0 auto; /* Centers the grid */
+    }
+
+    .testimonial-crd {
+        width: 100%; /* Ensures each testimonial takes full grid space */
+        margin-bottom: 0; /* Removes extra spacing */
+    }
+
+    .testimonial-list .testimonial-crd:nth-child(3), .testimonial-list .testimonial-crd:nth-child(4) {
+        display: block;
+    }
+
+    .contact-form-container {
+        max-width: 755px; /* Adjust as needed */
+        margin-top: -35px;
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1280px) {
+     /* Splitter Section */
+     .splitter-text {
+        max-width: 1200px; /* Aligns with container */
+        margin: 0 auto 30px; /* Centers and adds spacing */
+        margin-right: 10px;
+        padding-left: 0; /* Resets left padding */
+    }
+
+   /* Keep h2 Left-Aligned */
+    .splitter-text h2 {
+        text-align: left; /* Ensures heading stays left */
+        margin-left: 0;
+        max-width: 100%; /* Prevents restriction */
+    }
+
+    /* Keep p Centered */
+    .splitter-text p {
+        max-width: 1000px; /* Limits text width */
+        margin-left: auto; /* Centers paragraph */
+        margin-right: auto;
+        text-align: left; /* Keeps text readable */
+    }
+    
+    /* Testimonials Section */
+    .testimonial-list {
+        max-width: 1200px; /* Expands to match the container */
+    }
+
+    .contact-form-container {
+        max-width: 1100px; /* Adjust as needed */
+        margin-top: -35px;
+    }
 }
