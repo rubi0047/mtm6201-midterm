@@ -1,3 +1,7 @@
+.hidden-heading {
+    display: none; 
+}
+
 /* View All Button */
 .view-all {
     display: flex;

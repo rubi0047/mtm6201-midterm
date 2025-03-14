@@ -20,25 +20,9 @@
             <span itemprop="name">Skip to Main Content</span>
         </a>
 
-        <a href="#benefits" class="skip-link" aria-label="Skip directly to the Benefits section" itemprop="url">
-            <span itemprop="name">Skip to Benefits</span>
-        </a>
-
-        <a href="#courses" class="skip-link" aria-label="Skip directly to the Courses section" itemprop="url">
-            <span itemprop="name">Skip to Courses</span>
-        </a>
-
         <!-- Helps screen reader users navigate long pages quickly -->
         <a href="#testimonials" class="skip-link" aria-label="Skip directly to the Testimonials section" itemprop="url">
             <span itemprop="name">Skip to Testimonials</span>
-        </a>
-
-        <a href="#pricing" class="skip-link" aria-label="Skip directly to the Pricing section" itemprop="url">
-            <span itemprop="name">Skip to Pricing</span>
-        </a>
-
-        <a href="#faq" class="skip-link" aria-label="Skip directly to the FAQ section" itemprop="url">
-            <span itemprop="name">Skip to FAQ</span>
         </a>  
 
         <!-- Microdata schema improves SEO by providing structured navigation data -->
@@ -50,12 +34,13 @@
 
 
     <!-- Promo Banner -->
+    <h1 class="hidden-heading">Contact Page - Skillbridge</h1>
     <div class="rpt-wrapper" itemscope itemtype="https://schema.org/SpecialAnnouncement">
         <div class="promo-container">
             <div class="promo-banner">
                 
                 <!-- The <span> tag is used here to allow styling and semantic separation of the text inside the link without affecting its functionality -->
-                <a href="#pricing">
+                <a href="./pricing.html">
                     <span itemprop="name">Free Courses ✨ Sale Ends Soon, Get It Now ➔</span>
                 </a>
 
@@ -143,7 +128,7 @@
             <div class="container">
                 <div class="splitter-text">
                     <h2 id="testimonials-heading" itemprop="name">Contact Us Today</h2>
-                    <p itemprop="description">IF you're still on the fence, read some testimonials from our satisfied students who have transformed their skills with our courses! If you have any questions, please, fill out the contact form below to get in touch.</p>
+                    <p itemprop="description">If you're still on the fence, read some testimonials from our satisfied students who have transformed their skills with our courses! If you have any questions, please, fill out the contact form below to get in touch.</p>
                     <div class="view-all">
                         <button class="view-all-btn" aria-label="View all testimonials">View All</button>
                     </div>
@@ -256,27 +241,26 @@
             </div>
         </section>
 
-        <!-- Contact Form -->
         <div class="container">
-            <div class="contact-form-container">
-                <h2>Contact Us</h2>
-                <p>Please fill out the form below to get in touch.</p>
-                <form class="contact-form">
+            <div class="contact-form-container" itemscope itemtype="https://schema.org/ContactPage">
+                <h2 id="contact-form-heading" itemprop="name">Contact Us</h2>
+                <p itemprop="description">Please fill out the form below to get in touch.</p>
+                <form class="contact-form" aria-labelledby="contact-form-heading" itemscope itemtype="https://schema.org/ContactPoint">
                     <div class="form-group">
                         <label for="fullName">Full Name</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="Enter your Name">
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your Name" aria-required="true" aria-label="Full Name" itemprop="name">
                     </div>
-            
+        
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your Email">
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" aria-required="true" aria-label="Email" itemprop="email">
                     </div>
-            
+        
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Enter your Message"></textarea>
+                        <textarea id="message" name="message" placeholder="Enter your Message" aria-required="true" aria-label="Message" itemprop="description"></textarea>
                     </div>
-            
+        
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
