@@ -1144,11 +1144,7 @@
 
 /* Scaling */
 @media (min-width: 768px) and (max-width: 1000px){
-    .partners li:nth-child(7) {
-        display: none; /* Hides only the 7th logo */
-    }
-
-    .partners li:nth-child(6) {
+    .partners li:nth-child(6), .partners li:nth-child(7) {
         display: none;
     }
 }
