@@ -35,7 +35,7 @@
 }
 
 .splitter-text p {
-    line-height: 26px; /* Adjust to desired spacing */
+    line-height: 26px;
 }
 
 /* Pricing Section */
@@ -352,7 +352,7 @@
     color: var(--text-color);
     text-align: left;
     font-weight: 400;
-    margin: 0; /* Removes extra margin */
+    margin: 0;
     line-height: 1.5;
 }
 
@@ -417,7 +417,7 @@
     /* Pricing Section */
     .pricing-list {
         display: flex; 
-        justify-content: center; /* Centers the plans */
+        justify-content: center;
         gap: 20px; /* Adds spacing between the plans */
     }
 
@@ -479,15 +479,15 @@
 
     /* Keep p Centered */
     .splitter-text p {
-        max-width: 1000px; /* Limits text width */
+        max-width: 1000px;
         margin-left: auto; /* Centers paragraph */
         margin-right: auto;
-        text-align: left; /* Keeps text readable */
+        text-align: left;
     }      
 
     /* Pricing Section */
     .pricing-plans {
-        max-width: 1200px; /* Prevents them from stretching too wide */
+        max-width: 1200px;
     }
 
     /* FAQ Section */
