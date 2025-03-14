@@ -146,7 +146,7 @@
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-    cursor: pointer; /* Add cursor pointer for interactivity */
+    cursor: pointer; /* Cursor pointer for interactivity */
     animation: buttonPulse 1.1s infinite alternate ease-in-out;
     border-radius: 5px; /* Add some border radius to the button */
 }
@@ -210,12 +210,12 @@
 /* Individual Partner Logo */
 .partners img {
     height: 30px; /* Sets a consistent logo size */
-    padding-right: 15px; /* Adds spacing between logos */
+    padding-right: 15px;
 }
 
 /* Logo Wrapper - Grey Border Around Each Image */
 .logo-wrapper {
-    padding: 10px; /* Adds spacing around each logo */
+    padding: 10px;
     border-right: var(--border-light);
     display: flex;
     justify-content: center; /* Centers logo inside the wrapper */
@@ -235,11 +235,11 @@
 /* Large Homepage Photo */
 .home-photo {
     width: 100%;
-    max-width: 1200px; /* Ensures it aligns with the partners section */
-    margin: 0 auto; /* Centers it */
+    max-width: 1200px; /* Aligns with the partners section */
+    margin: 0 auto;
     padding: 20px; /* Matches padding of partners section */
     display: flex;
-    justify-content: center; /* Ensures alignment */
+    justify-content: center; /* Ensures centered alignment */
 }
 
 /* Ensure the image scales correctly */
@@ -303,12 +303,12 @@
 }
 
 .splitter-text p {
-    line-height: 26px; /* Adjust to desired spacing */
+    line-height: 26px;
 }
 
 .splitter-text, .benefit-list {
-    max-width: 1200px; /* Matches .container */
-    margin: 0 auto; /* Centers inside .container */
+    max-width: 1200px;
+    margin: 0 auto;
     width: 100%; /* Ensures full width */
 }
 
@@ -650,7 +650,7 @@
 /* Pricing Buttons */
 .pricing-toggle {
     display: flex;
-    justify-content: center; /* Centers buttons */
+    justify-content: center;
     background-color: var(--background-light);
     padding: 15px;
     margin: 0 100px;
@@ -997,7 +997,7 @@
         align-items: center;
         gap: 10px 20px;
         max-width: 900px;
-        margin: 0 auto 20px; /* Centers it */
+        margin: 0 auto 20px;
         padding-left: 0; /* Ensures no extra left padding */
     }
     
@@ -1022,7 +1022,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 columns */
         grid-template-rows: repeat(3, 1fr); /* 3 rows */
-        gap: 12px; /* Keeps spacing even */
+        gap: 12px;
         max-width: 900px; /* Keeps within container */
         margin: 0 auto;
     }
@@ -1062,7 +1062,7 @@
     }
     
     /* Unhide last 2 items */
-    .benefit-item:nth-child(5),.benefit-item:nth-child(6) {
+    .benefit-item:nth-child(5), .benefit-item:nth-child(6) {
         display: flex;
     }
 
@@ -1086,9 +1086,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 columns */
         grid-template-rows: repeat(2, auto); /* 2 rows */
-        gap: 20px; /* Adds spacing between grid items */
-        max-width: 900px; /* Keeps within container */
-        margin: 0 auto; /* Centers the grid */
+        gap: 20px;
+        max-width: 900px; 
+        margin: 0 auto;
     }
 
     .testimonial-crd {
@@ -1099,8 +1099,8 @@
     /* Pricing Section */
     .pricing-list {
         display: flex; 
-        justify-content: center; /* Centers the plans */
-        gap: 20px; /* Adds spacing between the plans */
+        justify-content: center;
+        gap: 20px;
     }
 
     .pricing-plans {
@@ -1112,7 +1112,7 @@
     .faq-bkrnd {
         display: grid;
         grid-template-columns: 1fr 1fr; /* Equal columns */
-        gap: 40px; /* Space between sections */
+        gap: 40px;
         align-items: start; /* Aligns content to the top */
         padding: 50px; /* Keeps padding consistent */
         max-width: 910px;
@@ -1156,7 +1156,7 @@
     }
     /* Splitter Section */
     .splitter-text {
-        max-width: 1200px; /* Aligns with container */
+        max-width: 1200px;
         margin: 0 auto 30px; /* Centers and adds spacing */
         margin-right: 10px;
         padding-left: 0; /* Resets left padding */
@@ -1186,7 +1186,7 @@
         justify-content: center;
         gap: 7px; /* Decrease gap slightly */
         max-width: 1100px;
-        margin: 0 auto; /* Centers the grid */
+        margin: 0 auto;
         padding: 0 10px;
     }
 
@@ -1194,7 +1194,7 @@
     .benefit-item {
         width: 100%; /* Ensures even scaling */
         aspect-ratio: 1 / 1; /* Keeps a square shape */
-        padding: 18px; /* Slightly smaller padding */
+        padding: 18px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1207,7 +1207,7 @@
 
     /* Text Container */
     .benefit-crd-txt h2 {
-        font-size: 18px; /* Adjusted for balance */
+        font-size: 18px;
         line-height: 24px;
     }
 
@@ -1230,12 +1230,12 @@
 
     /* Testimonials Section */
     .testimonial-list {
-        max-width: 1200px; /* Expands to match the container */
+        max-width: 1200px;
     }
 
     /* Pricing Section */
     .pricing-plans {
-        max-width: 1200px; /* Prevents them from stretching too wide */
+        max-width: 1200px;
     }
 
     /* FAQ Section */
