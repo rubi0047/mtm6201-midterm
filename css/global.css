@@ -190,7 +190,6 @@ nav img {
     font-size: 14px;
     font-weight: bold;
     display: block; /* Ensures padding applies correctly */
-    /* background-color: var(--primary-color); */
     color: var(--text-color);
     padding: 10px 8px;
     border-radius: var(--border-radius-sm); /* Rounded corners */
@@ -272,7 +271,7 @@ footer .container {
 
 /* Footer Logo */
 .footer-logo img {
-    width: 50px; /* Adjust size based on design */
+    width: 50px;
     margin-bottom: 25px;
 }
 
@@ -353,7 +352,7 @@ footer .container {
 .social-links a {
     display: flex;
     justify-content: center;
-    align-items: center; /* Ensures vertical alignment for a balanced look */
+    align-items: center; /* Ensures vertical alignment */
     width: 60px;
     height: 60px;
     border-radius: var(--border-radius-md); /* Rounds the corners for a button-like appearance */
